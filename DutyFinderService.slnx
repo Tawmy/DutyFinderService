@@ -1,5 +1,8 @@
 <Solution>
     <Folder Name="/Solution Items/">
+        <File Path=".github\workflows\build-and-push.yml"/>
+        <File Path="compose.dev.yml"/>
+        <File Path="compose.local.yml"/>
         <File Path="compose.yml"/>
     </Folder>
     <Project Path="DutyFinderService/DutyFinderService.csproj"/>
