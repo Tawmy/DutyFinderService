@@ -7,6 +7,7 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 app.MapOpenApi();
+app.UseSwaggerUI(x => x.SwaggerEndpoint("/openapi/v1.json", "Duty Finder API"));
 
 var summaries = new[]
 {
