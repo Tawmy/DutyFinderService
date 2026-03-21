@@ -1,6 +1,6 @@
 ﻿services:
   api:
-    image: duty-finder-service
+    image: dutyfinderservice
     build:
       context: .
       dockerfile: DutyFinderService/Dockerfile

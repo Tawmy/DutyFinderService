@@ -1,6 +1,6 @@
 ﻿services:
   api:
-    image: ghcr.io/tawmy/duty-finder-service:1.0.0
+    image: ghcr.io/tawmy/dutyfinderservice:1.0.0
     container_name: duty-finder-service
     restart: unless-stopped
     environment:
