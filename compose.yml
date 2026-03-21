@@ -1,0 +1,7 @@
+﻿services:
+  dutyfinderservice:
+    image: dutyfinderservice
+    build:
+      context: .
+      dockerfile: DutyFinderService/Dockerfile
+
