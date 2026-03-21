@@ -1,0 +1,12 @@
+﻿services:
+  api:
+    image: duty-finder-service
+    build:
+      context: .
+      dockerfile: DutyFinderService/Dockerfile
+    environment:
+      LOGGING__LOGLEVEL__DEFAULT: Debug
+      LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Debug
+      AUTH_AUTHORITY: https://id.ffxiv.local/realms/eorzea-dev
+    labels:
+      - dev.orbstack.domains=duty-finder-service.local

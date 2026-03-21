@@ -1,0 +1,15 @@
+﻿services:
+  api:
+    image: ghcr.io/tawmy/duty-finder-service:main
+    environment:
+      AUTH_AUTHORITY: https://dev.ffxiv.id/realms/eorzea
+    networks:
+      - default
+      - reverse-proxy
+    labels:
+      caddy: duty-finder-service.tawmy.dev
+      caddy.reverse_proxy: "{{upstreams 8080}}"
+
+networks:
+  reverse-proxy:
+    external: true

@@ -1,7 +1,14 @@
 ﻿services:
-  dutyfinderservice:
-    image: dutyfinderservice
-    build:
-      context: .
-      dockerfile: DutyFinderService/Dockerfile
+  api:
+    image: ghcr.io/tawmy/duty-finder-service:1.0.0
+    container_name: duty-finder-service
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT:
+      ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
+      LOGGING__LOGLEVEL__DEFAULT: Information
+      LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Warning
 
+      AUTH_AUDIENCE: duty-finder-service
+      AUTH_AUTHORITY: https://ffxiv.id/realms/eorzea
+      SWAGGER_SCOPES: duty-finder-service
