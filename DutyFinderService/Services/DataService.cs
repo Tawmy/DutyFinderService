@@ -7,9 +7,9 @@ namespace DutyFinderService.Services;
 
 public class DataService
 {
+    private const string Directory = "Json";
     private static readonly JsonSerializerOptions Options = new() { Converters = { new JsonStringEnumConverter() } };
     private ImmutableArray<Trial>? _trials;
-    private const string Directory = "Json";
 
     public async Task InitializeAsync(CT ct = default)
     {

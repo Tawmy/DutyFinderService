@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using DutyFinderService.Extensions;
 using DutyFinderService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,7 @@ var app = builder.Build();
 app.MapOpenApi();
 app.UseSwaggerUI(x => x.SwaggerEndpoint("/openapi/v1.json", "Duty Finder API"));
 
-app.MapGet("/trials", (DataService dataService) => dataService.GetTrials());
+app.MapGet("/trials", (DataService dataService) => dataService.GetTrials().Select(x => x.ToDto()));
 
 await app.Services.GetRequiredService<DataService>().InitializeAsync();
 
