@@ -1,6 +1,6 @@
 ﻿services:
   api:
-    image: ghcr.io/tawmy/dutyfinderservice:main
+    image: ghcr.io/tawmy/dutyfinderservice:feature-trials
     environment:
       AUTH_AUTHORITY: https://dev.ffxiv.id/realms/eorzea
     networks:
