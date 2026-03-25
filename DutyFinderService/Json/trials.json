@@ -1,0 +1,653 @@
+[
+  {
+    "Name": "The Bowl of Embers",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 20,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Navel",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 34,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Howling Eye",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 44,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Porta Decumana",
+    "Expansion": "ARealmReborn",
+    "Patch": "6.1",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Bowl of Embers (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Howling Eye (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Navel (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Thornmarch (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "A Relic Reborn: The Chimera",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.16",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "A Relic Reborn: The Hydra",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.16",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Whorleater (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Battle on the Big Bridge",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Striking Tree (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Akh Afah Amphitheatre (Hard)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Dragon's Neck",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Chrysalis",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.5",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1067
+  },
+  {
+    "Name": "Battle in the Big Keep",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.5",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1066
+  },
+  {
+    "Name": "Urth's Fount",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.5",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1064
+  },
+  {
+    "Name": "The Minstrel's Ballad: Ultima's Bane",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 855
+  },
+  {
+    "Name": "The Howling Eye (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 856
+  },
+  {
+    "Name": "The Navel (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 857
+  },
+  {
+    "Name": "The Bowl of Embers (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 855
+  },
+  {
+    "Name": "Thornmarch (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 894
+  },
+  {
+    "Name": "The Whorleater (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 893
+  },
+  {
+    "Name": "The Striking Tree (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 994
+  },
+  {
+    "Name": "The Akh Afah Amphitheatre (Extreme)",
+    "Expansion": "ARealmReborn",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Extreme",
+    "AchievementId": 1045
+  },
+  {
+    "Name": "Thok ast Thok (Hard)",
+    "Expansion": "Heavensward",
+    "Patch": "3.0",
+    "Level": 53,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Limitless Blue (Hard)",
+    "Expansion": "Heavensward",
+    "Patch": "3.0",
+    "Level": 57,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Singularity Reactor",
+    "Expansion": "Heavensward",
+    "Patch": "3.0",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Containment Bay S1T7",
+    "Expansion": "Heavensward",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Steps of Faith",
+    "Expansion": "Heavensward",
+    "Patch": "3.3",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Containment Bay P1T6",
+    "Expansion": "Heavensward",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Containment Bay Z1T9",
+    "Expansion": "Heavensward",
+    "Patch": "3.5",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Limitless Blue (Extreme)",
+    "Expansion": "Heavensward",
+    "Patch": "3.0",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1220
+  },
+  {
+    "Name": "Thok ast Thok (Extreme)",
+    "Expansion": "Heavensward",
+    "Patch": "3.0",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1221
+  },
+  {
+    "Name": "The Minstrel's Ballad: Thordan's Reign",
+    "Expansion": "Heavensward",
+    "Patch": "3.1",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1400
+  },
+  {
+    "Name": "Containment Bay S1T7 (Extreme)",
+    "Expansion": "Heavensward",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1485
+  },
+  {
+    "Name": "The Minstrel's Ballad: Nidhogg's Rage",
+    "Expansion": "Heavensward",
+    "Patch": "3.3",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1601
+  },
+  {
+    "Name": "Containment Bay P1T6 (Extreme)",
+    "Expansion": "Heavensward",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1636
+  },
+  {
+    "Name": "Containment Bay Z1T9 (Extreme)",
+    "Expansion": "Heavensward",
+    "Patch": "3.5",
+    "Level": 60,
+    "Difficulty": "Extreme",
+    "AchievementId": 1685
+  },
+  {
+    "Name": "The Pool of Tribute",
+    "Expansion": "Stormblood",
+    "Patch": "4.0",
+    "Level": 63,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Emanation",
+    "Expansion": "Stormblood",
+    "Patch": "4.0",
+    "Level": 67,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Royal Menagerie",
+    "Expansion": "Stormblood",
+    "Patch": "4.0",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Jade Stoa",
+    "Expansion": "Stormblood",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Castrum Fluminis",
+    "Expansion": "Stormblood",
+    "Patch": "4.3",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Great Hunt",
+    "Expansion": "Stormblood",
+    "Patch": "4.36",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Hells's Kier",
+    "Expansion": "Stormblood",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Wreath of Snakes",
+    "Expansion": "Stormblood",
+    "Patch": "4.5",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "1 Ohashi",
+    "Expansion": "Stormblood",
+    "Patch": "4.56",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 2236
+  },
+  {
+    "Name": "The Pool of Tribute (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.0",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 1902
+  },
+  {
+    "Name": "Emanation (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.0",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 1901
+  },
+  {
+    "Name": "The Minstrel's Ballad: Shinryu's Domain",
+    "Expansion": "Stormblood",
+    "Patch": "4.1",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 1989
+  },
+  {
+    "Name": "The Jade Stoa (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 2023
+  },
+  {
+    "Name": "The Minstrel's Ballad: Tsukuyomi's Pain",
+    "Expansion": "Stormblood",
+    "Patch": "4.3",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 2060
+  },
+  {
+    "Name": "The Great Hunt (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.36",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 2109
+  },
+  {
+    "Name": "Hells' Kier (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 2117
+  },
+  {
+    "Name": "The Wreath of Snakes (Extreme)",
+    "Expansion": "Stormblood",
+    "Patch": "4.5",
+    "Level": 70,
+    "Difficulty": "Extreme",
+    "AchievementId": 2165
+  },
+  {
+    "Name": "The Dancing Plague",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 73,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Crown of the Immaculate",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 79,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Dying Gasp",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Cinder Drift",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Seat of Sacrifice",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.3",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Castrum Marinum",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Cloud Deck",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.5",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Dancing Plague (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2385
+  },
+  {
+    "Name": "The Crown of the Immaculate (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2386
+  },
+  {
+    "Name": "The Minstrel's Ballad: Hades's Elegy",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.0",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2441
+  },
+  {
+    "Name": "Cinder Drift (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2590
+  },
+  {
+    "Name": "Memoria Misera (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.25",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2586
+  },
+  {
+    "Name": "The Seat of Sacrifice (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.3",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2621
+  },
+  {
+    "Name": "Castrum Marinum (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2718
+  },
+  {
+    "Name": "The Cloud Deck (Extreme)",
+    "Expansion": "Shadowbringers",
+    "Patch": "5.5",
+    "Level": 80,
+    "Difficulty": "Extreme",
+    "AchievementId": 2846
+  },
+  {
+    "Name": "The Dark Inside",
+    "Expansion": "Endwalker",
+    "Patch": "6.0",
+    "Level": 83,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Mothercrystal",
+    "Expansion": "Endwalker",
+    "Patch": "6.0",
+    "Level": 89,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Day",
+    "Expansion": "Endwalker",
+    "Patch": "6.0",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Storm's Crown",
+    "Expansion": "Endwalker",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Mount Ordeals",
+    "Expansion": "Endwalker",
+    "Patch": "6.3",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Voidcast Dais",
+    "Expansion": "Endwalker",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Abyssal Fracture",
+    "Expansion": "Endwalker",
+    "Patch": "6.5",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Gilded Araya",
+    "Expansion": "Endwalker",
+    "Patch": "6.55",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Minstrel's Ballad: Zodiark's Fall",
+    "Expansion": "Endwalker",
+    "Patch": "6.0",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 2988
+  },
+  {
+    "Name": "The Minstrel's Ballad: Hydaelyn's Call",
+    "Expansion": "Endwalker",
+    "Patch": "6.0",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 2989
+  },
+  {
+    "Name": "The Minstrel's Ballad: Endsinger's Aria",
+    "Expansion": "Endwalker",
+    "Patch": "6.1",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 3072
+  },
+  {
+    "Name": "Storm's Crown (Extreme)",
+    "Expansion": "Endwalker",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 3107
+  },
+  {
+    "Name": "Mount Ordeals (Extreme)",
+    "Expansion": "Endwalker",
+    "Patch": "6.3",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 3160
+  },
+  {
+    "Name": "The Voidcast Dais (Extreme)",
+    "Expansion": "Endwalker",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 3246
+  },
+  {
+    "Name": "The Abyssal Fracture (Extreme)",
+    "Expansion": "Endwalker",
+    "Patch": "6.5",
+    "Level": 90,
+    "Difficulty": "Extreme",
+    "AchievementId": 3402
+  }
+]
