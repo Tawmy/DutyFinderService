@@ -8,5 +8,6 @@ public enum Expansion
     [Display(Name = "Heavensward")] Heavensward,
     [Display(Name = "Stormblood")] Stormblood,
     [Display(Name = "Shadowbringers")] Shadowbringers,
-    [Display(Name = "Endwalker")] Endwalker
+    [Display(Name = "Endwalker")] Endwalker,
+    [Display(Name = "Dawntrail")] Dawntrail
 }

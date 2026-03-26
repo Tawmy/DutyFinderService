@@ -649,5 +649,110 @@
     "Level": 90,
     "Difficulty": "Extreme",
     "AchievementId": 3402
+  },
+  {
+    "Name": "Worqor Lar Dor",
+    "Expansion": "Dawntrail",
+    "Patch": "7.0",
+    "Level": 93,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Everkeep",
+    "Expansion": "Dawntrail",
+    "Patch": "7.0",
+    "Level": 99,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Interphos",
+    "Expansion": "Dawntrail",
+    "Patch": "7.0",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Recollection",
+    "Expansion": "Dawntrail",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Ageless Necropolis",
+    "Expansion": "Dawntrail",
+    "Patch": "7.3",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Windward Wilds",
+    "Expansion": "Dawntrail",
+    "Patch": "7.35",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Hell on Rails",
+    "Expansion": "Dawntrail",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Worqor Lar Dor (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.0",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3526
+  },
+  {
+    "Name": "Everkeep (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.0",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3525
+  },
+  {
+    "Name": "The Minstrel's Ballad: Sphene's Burden",
+    "Expansion": "Dawntrail",
+    "Patch": "7.1",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3605
+  },
+  {
+    "Name": "Recollection (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3626
+  },
+  {
+    "Name": "The Minstrel's Ballad: Necron's Embrace",
+    "Expansion": "Dawntrail",
+    "Patch": "7.3",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3805
+  },
+  {
+    "Name": "The Windward Wilds (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.35",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3823
+  },
+  {
+    "Name": "Hell on Rails (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3889
   }
 ]
