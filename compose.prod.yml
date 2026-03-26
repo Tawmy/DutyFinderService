@@ -1,0 +1,12 @@
+﻿services:
+  api:
+    image: ghcr.io/tawmy/dutyfinderservice:main
+    networks:
+      - reverse-proxy
+    labels:
+      caddy: duty-finder-service.eorzea.online
+      caddy.reverse_proxy: "{{upstreams 8080}}"
+
+networks:
+  reverse-proxy:
+    external: true
