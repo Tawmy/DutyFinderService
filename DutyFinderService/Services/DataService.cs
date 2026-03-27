@@ -5,7 +5,7 @@ using DutyFinderService.Data;
 
 namespace DutyFinderService.Services;
 
-public class DataService
+internal class DataService
 {
     private const string Directory = "Json";
     private static readonly JsonSerializerOptions Options = new() { Converters = { new JsonStringEnumConverter() } };

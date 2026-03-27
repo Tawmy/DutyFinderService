@@ -9,3 +9,7 @@
       LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Debug
     labels:
       - dev.orbstack.domains=duty-finder-service.local
+  
+  db:
+    labels:
+      - dev.orbstack.domains=db.duty-finder-service.local
