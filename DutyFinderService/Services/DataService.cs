@@ -17,8 +17,8 @@ internal class DataService(IDbContextFactory<DatabaseContext> dbContextFactory)
 
     public async Task InitializeAsync(CT ct = default)
     {
-        _trials = await LoadTrialsAsync(ct);
-        _images = await LoadImagesAsync(ct);
+        await LoadTrialsAsync(ct);
+        await LoadImagesAsync(ct);
     }
 
     public ImmutableArray<Trial> GetTrials()
@@ -31,18 +31,18 @@ internal class DataService(IDbContextFactory<DatabaseContext> dbContextFactory)
         return _images ?? throw new InvalidOperationException("Images aren't loaded.");
     }
 
-    public async Task<ImmutableArray<Image>> LoadImagesAsync(CT ct)
+    public async Task LoadImagesAsync(CT ct)
     {
         var ctx = await dbContextFactory.CreateDbContextAsync(ct);
         var images = await ctx.Images.ToListAsync(ct);
-        return [..images];
+        _images = [..images];
     }
 
-    private static async Task<ImmutableArray<Trial>> LoadTrialsAsync(CT ct)
+    private async Task LoadTrialsAsync(CT ct)
     {
         await using var stream = File.OpenRead($"{Directory}/trials.json");
         var trials = await JsonSerializer.DeserializeAsync<Trial[]>(stream, Options, ct);
 
-        return [..trials ?? throw new JsonException("Failed to parse trials.")];
+        _trials = [..trials ?? throw new JsonException("Failed to parse trials.")];
     }
 }
