@@ -42,7 +42,7 @@ app.MapGet("/refresh", async (DataService dataService, XivApiService xivApiServi
     return Results.NoContent();
 }).RequireAuthorization();
 
-await app.Services.GetRequiredService<DataService>().InitializeAsync();
 await app.Services.MigrateDatabaseAsync<DatabaseContext>();
+await app.Services.GetRequiredService<DataService>().InitializeAsync();
 
 app.Run();
