@@ -9,6 +9,8 @@
       LOGGING__LOGLEVEL__DEFAULT: Information
       LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Warning
       CONNECTION_STRING: Host=db;Database=duty-finder-service;Username=duty-finder-service;Password=${DB_PASSWORD};GSS Encryption Mode=Disable
+      AUTH_AUDIENCE: duty-finder-service
+      AUTH_AUTHORITY: https://ffxiv.id/realms/eorzea
 
   db:
     image: postgres:18

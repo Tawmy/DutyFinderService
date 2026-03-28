@@ -1,4 +1,6 @@
 ﻿services:
   api:
+    environment:
+      AUTH_AUTHORITY: https://staging.ffxiv.id/realms/eorzea
     labels:
       caddy: duty-finder-service.staging.eorzea.online
