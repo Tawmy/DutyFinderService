@@ -5,6 +5,7 @@
       db:
         condition: service_healthy
     networks:
+      - default
       - reverse-proxy
     labels:
       caddy: duty-finder-service.eorzea.online
