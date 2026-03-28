@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.ConfigureHttpJsonOptions(x => x.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
-builder.Services.AddDbContext<DatabaseContext>();
+builder.Services.AddDbContextFactory<DatabaseContext>();
 builder.Services.AddXivApiClient();
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddScoped<XivApiService>();
@@ -26,10 +26,19 @@ app.UseAuthorization();
 app.MapOpenApi();
 app.UseSwaggerUI(x => x.SwaggerEndpoint("/openapi/v1.json", "Duty Finder API"));
 
-app.MapGet("/trials", (DataService dataService) => dataService.GetTrials().Select(x => x.ToDto()));
-app.MapGet("/refresh", async (DataService dataService, XivApiService service, CT ct) =>
+app.MapGet("/trials", (DataService dataService) =>
 {
-    await service.UpdateImagesAsync(dataService.GetTrials(), ct);
+    var images = dataService.GetImages();
+    return dataService.GetTrials()
+        .Select(x =>
+            x.ToDto(images.First(y =>
+                y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl));
+});
+
+app.MapGet("/refresh", async (DataService dataService, XivApiService xivApiService, CT ct) =>
+{
+    await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ct);
+    await dataService.LoadImagesAsync(ct);
     return Results.NoContent();
 }).RequireAuthorization();
 
