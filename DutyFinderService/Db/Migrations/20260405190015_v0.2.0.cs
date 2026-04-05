@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DutyFinderService.Db.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class v020 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,8 @@ namespace DutyFinderService.Db.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn),
                     name = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
-                    image_url = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false)
+                    image_url = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: false),
+                    last_updated_patch = table.Column<string>(type: "character varying(8)", maxLength: 8, nullable: false)
                 },
                 constraints: table =>
                 {
