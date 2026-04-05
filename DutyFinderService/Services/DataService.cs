@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using AspNetCoreExtensions;
 using DutyFinderService.Data;
 using DutyFinderService.Db;
 using DutyFinderService.Db.Models;
@@ -8,10 +9,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DutyFinderService.Services;
 
-internal class DataService(IDbContextFactory<DatabaseContext> dbContextFactory)
+internal class DataService(IConfiguration configuration, IDbContextFactory<DatabaseContext> dbContextFactory)
 {
     private const string Directory = "Json";
     private static readonly JsonSerializerOptions Options = new() { Converters = { new JsonStringEnumConverter() } };
+    private readonly string _ffxivPatch = configuration.GetGuardedConfiguration(EnvironmentVariables.FfxivPatch);
     private ImmutableArray<Image>? _images;
     private ImmutableArray<Trial>? _trials;
 
@@ -19,6 +21,11 @@ internal class DataService(IDbContextFactory<DatabaseContext> dbContextFactory)
     {
         await LoadTrialsAsync(ct);
         await LoadImagesAsync(ct);
+    }
+
+    public string GetCurrentFfxivPatch()
+    {
+        return _ffxivPatch;
     }
 
     public ImmutableArray<Trial> GetTrials()

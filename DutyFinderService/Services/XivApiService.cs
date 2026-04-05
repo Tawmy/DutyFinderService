@@ -10,15 +10,15 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 {
     private const string Sheet = "ContentFinderCondition";
 
-    public async Task UpdateImagesAsync(IEnumerable<Trial> trials, CT ct = default)
+    public async Task UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(trials.Select(x => x.Name), ct);
+        await UpdateImagesAsync(trials.Select(x => x.Name), ffxivPatch, ct);
     }
 
-    private async Task UpdateImagesAsync(IEnumerable<string> names, CT ct)
+    private async Task UpdateImagesAsync(IEnumerable<string> names, string ffxivPatch, CT ct)
     {
         var contentDatas = await RetrieveContentDatasAsync(names, ct);
-        await AddContentDatasToDbAsync(contentDatas, ct);
+        await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
     }
 
     private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<string> names, CT ct)
@@ -84,7 +84,7 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         return $"https://v2.xivapi.com/api/asset?path={imagePath}&format=png";
     }
 
-    private async Task AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, CT ct)
+    private async Task AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, string ffxivPatch, CT ct)
     {
         var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Name).Contains(x.Name)).ToListAsync(ct);
 
@@ -92,10 +92,12 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         {
             if (dbEntries.FirstOrDefault(x => x.Name == contentData.Name) is { } dbEntry)
             {
-                if (!dbEntry.ImageUrl.Equals(contentData.ImageUrl))
+                if (!dbEntry.ImageUrl.Equals(contentData.ImageUrl) ||
+                    !dbEntry.LastUpdatedPatch.Equals(ffxivPatch, StringComparison.OrdinalIgnoreCase))
                 {
                     // update url if xivapi returned different url
                     dbEntry.ImageUrl = contentData.ImageUrl;
+                    dbEntry.LastUpdatedPatch = ffxivPatch;
                 }
             }
             else
@@ -104,7 +106,8 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                 ctx.Images.Add(new Image
                 {
                     Name = contentData.Name,
-                    ImageUrl = contentData.ImageUrl
+                    ImageUrl = contentData.ImageUrl,
+                    LastUpdatedPatch = ffxivPatch
                 });
             }
         }

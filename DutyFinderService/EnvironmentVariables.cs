@@ -19,4 +19,9 @@ public static class EnvironmentVariables
     ///     Used for JWT Token validation and Swagger UI scopes.
     /// </summary>
     public const string AuthAudience = "AUTH_AUDIENCE";
+
+    /// <summary>
+    ///     Current FFXIV patch. A new value will force images to be refreshed upon startup.
+    /// </summary>
+    public const string FfxivPatch = "FFXIV_PATCH";
 }

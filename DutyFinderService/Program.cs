@@ -13,6 +13,7 @@ builder.Services.AddDbContextFactory<DatabaseContext>();
 builder.Services.AddXivApiClient();
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddScoped<XivApiService>();
+builder.Services.AddScoped<RefreshService>();
 
 builder.AddCustomOpenApi();
 builder.AddCustomAuthentication();
@@ -37,12 +38,16 @@ app.MapGet("/trials", (DataService dataService) =>
 
 app.MapGet("/refresh", async (DataService dataService, XivApiService xivApiService, CT ct) =>
 {
-    await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ct);
+    var currentFfxivPatch = dataService.GetCurrentFfxivPatch();
+    await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
     await dataService.LoadImagesAsync(ct);
     return Results.NoContent();
 }).RequireAuthorization();
 
 await app.Services.MigrateDatabaseAsync<DatabaseContext>();
+
 await app.Services.GetRequiredService<DataService>().InitializeAsync();
+var scope = app.Services.CreateScope();
+await scope.ServiceProvider.GetRequiredService<RefreshService>().UpdateImagesIfNecessaryAsync();
 
 app.Run();
