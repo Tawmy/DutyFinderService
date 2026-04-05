@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DutyFinderService.Db.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20260327093231_Initial")]
-    partial class Initial
+    [Migration("20260405190015_v0.2.0")]
+    partial class v020
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,12 @@ namespace DutyFinderService.Db.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)")
                         .HasColumnName("image_url");
+
+                    b.Property<string>("LastUpdatedPatch")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("character varying(8)")
+                        .HasColumnName("last_updated_patch");
 
                     b.Property<string>("Name")
                         .IsRequired()
