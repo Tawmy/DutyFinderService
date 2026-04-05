@@ -1,7 +1,11 @@
 ﻿services:
   api:
     image: ghcr.io/tawmy/dutyfinderservice:main
+    depends_on:
+      db:
+        condition: service_healthy
     networks:
+      - default
       - reverse-proxy
     labels:
       caddy: duty-finder-service.eorzea.online

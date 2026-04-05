@@ -8,4 +8,5 @@
         <File Path="compose.yml"/>
     </Folder>
     <Project Path="DutyFinderService/DutyFinderService.csproj"/>
+    <Project Path="XivApiClient/XivApiClient.csproj"/>
 </Solution>

@@ -9,5 +9,6 @@ public record TrialDto
     public required string Patch { get; init; }
     public required short Level { get; init; }
     public required TrialDifficulty Difficulty { get; init; }
+    public required string ImageUrl { get; init; }
     public short? AchievementId { get; init; }
 }
