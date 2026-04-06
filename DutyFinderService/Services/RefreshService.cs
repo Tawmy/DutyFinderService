@@ -21,8 +21,8 @@ internal class RefreshService(
         else
         {
             logger.LogInformation("Not all images have been updated this patch, updating...");
-            var trials = dataService.GetTrials();
-            await xivApiService.UpdateImagesAsync(trials, ffxivPatch, ct);
+            await xivApiService.UpdateImagesAsync(dataService.GetRaids(), ffxivPatch, ct);
+            await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ffxivPatch, ct);
         }
     }
 

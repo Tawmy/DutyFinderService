@@ -1,0 +1,166 @@
+[
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 747
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 5",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 887
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 1",
+    "NameSuffix": "(Savage)",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 997
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 2",
+    "NameSuffix": "(Savage)",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 998
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 3",
+    "NameSuffix": "(Savage)",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 999
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 4",
+    "NameSuffix": "(Savage)",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 1000
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1040
+  }
+]

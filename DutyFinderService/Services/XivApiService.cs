@@ -10,30 +10,45 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 {
     private const string Sheet = "ContentFinderCondition";
 
-    public async Task UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
+    public async Task UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(trials.Select(x => x.Name), ffxivPatch, ct);
+        await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameSuffix)), ffxivPatch, ct);
     }
 
-    private async Task UpdateImagesAsync(IEnumerable<string> names, string ffxivPatch, CT ct)
+    public async Task UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
     {
-        var contentDatas = await RetrieveContentDatasAsync(names, ct);
+        await UpdateImagesAsync(trials.Select(x => new Content(x.Name, x.NameSuffix)), ffxivPatch, ct);
+    }
+
+    private async Task UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
+    {
+        var contentDatas = await RetrieveContentDatasAsync(contents, ct);
         await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
     }
 
-    private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<string> names, CT ct)
+    private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<Content> contents, CT ct)
     {
         List<ContentData> contentDatas = [];
-        foreach (var name in names)
+        foreach (var content in contents)
         {
-            var rowId = await GetRowIdAsync(name, ct);
+            uint? rowId = null;
+            try
+            {
+                rowId = await GetRowIdAsync(content.FullName, ct);
+            }
+            catch
+            {
+                // do nothing
+            }
 
-            if (await GetImageUrlAsync(rowId, ct) is not { } imageUrl)
+            rowId ??= await GetRowIdAsync(content.Name, ct);
+
+            if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
             {
                 throw new XivApiException($"Failed to retrieve image url for rowId {rowId}");
             }
 
-            contentDatas.Add(new ContentData(name, imageUrl));
+            contentDatas.Add(new ContentData(content, imageUrl));
         }
 
         return contentDatas;
@@ -86,11 +101,12 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 
     private async Task AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, string ffxivPatch, CT ct)
     {
-        var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Name).Contains(x.Name)).ToListAsync(ct);
+        var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Content.FullName).Contains(x.Name))
+            .ToListAsync(ct);
 
         foreach (var contentData in contentDatas)
         {
-            if (dbEntries.FirstOrDefault(x => x.Name == contentData.Name) is { } dbEntry)
+            if (dbEntries.FirstOrDefault(x => x.Name == contentData.Content.FullName) is { } dbEntry)
             {
                 if (!dbEntry.ImageUrl.Equals(contentData.ImageUrl) ||
                     !dbEntry.LastUpdatedPatch.Equals(ffxivPatch, StringComparison.OrdinalIgnoreCase))
@@ -105,7 +121,7 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                 // data not saved to database yet, create new entry
                 ctx.Images.Add(new Image
                 {
-                    Name = contentData.Name,
+                    Name = contentData.Content.FullName,
                     ImageUrl = contentData.ImageUrl,
                     LastUpdatedPatch = ffxivPatch
                 });
@@ -115,7 +131,12 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         await ctx.SaveChangesAsync(ct);
     }
 
-    private record ContentData(string Name, string ImageUrl);
+    private record Content(string Name, string? NameSuffix)
+    {
+        public string FullName => !string.IsNullOrEmpty(NameSuffix) ? $"{Name} {NameSuffix}" : Name;
+    }
+
+    private record ContentData(Content Content, string ImageUrl);
 
     public class XivApiException(string message) : Exception(message);
 }
