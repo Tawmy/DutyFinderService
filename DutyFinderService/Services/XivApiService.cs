@@ -15,7 +15,8 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         return await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
     }
 
-    public async Task<int> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch, CT ct = default)
+    public async Task<int> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch,
+        CT ct = default)
     {
         return await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
     }
@@ -129,7 +130,7 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                     // update url if xivapi returned different url
                     dbEntry.ImageUrl = contentData.ImageUrl;
                     dbEntry.LastUpdatedPatch = ffxivPatch;
-                    
+
                     count++;
                 }
             }

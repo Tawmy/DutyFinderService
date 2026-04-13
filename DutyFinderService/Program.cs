@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigureHttpJsonOptions(x => x.SerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 builder.Services.AddDbContextFactory<DatabaseContext>();
+builder.Services.AddHybridCache();
 builder.Services.AddXivApiClient();
 builder.Services.AddSingleton<DataService>();
 builder.Services.AddScoped<XivApiService>();
