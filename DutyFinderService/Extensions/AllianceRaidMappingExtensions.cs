@@ -4,18 +4,17 @@ using DutyFinderService.DTOs;
 
 namespace DutyFinderService.Extensions;
 
-public static class RaidMappingExtensions
+public static class AllianceRaidMappingExtensions
 {
-    extension(Raid source)
+    extension(AllianceRaid source)
     {
-        public RaidDto ToDto(string imageUrl)
+        public AllianceRaidDto ToDto(string imageUrl)
         {
-            return new RaidDto
+            return new AllianceRaidDto
             {
                 Name = source.Name,
                 Expansion = source.Expansion.GetDisplayName(),
                 Series = source.Series,
-                Section = source.Section,
                 Patch = source.Patch,
                 Level = source.Level,
                 Difficulty = source.Difficulty,

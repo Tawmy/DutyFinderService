@@ -13,6 +13,7 @@ public static class Endpoints
             {
                 var currentFfxivPatch = dataService.GetCurrentFfxivPatch();
                 await xivApiService.UpdateImagesAsync(dataService.GetRaids(), currentFfxivPatch, ct);
+                await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), currentFfxivPatch, ct);
                 await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
                 await dataService.LoadImagesAsync(ct);
                 return Results.NoContent();
@@ -22,6 +23,15 @@ public static class Endpoints
             {
                 var images = dataService.GetImages();
                 return dataService.GetRaids()
+                    .Select(x =>
+                        x.ToDto(images.First(y =>
+                            y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl));
+            });
+
+            app.MapGet("/alliance-raids", (DataService dataService) =>
+            {
+                var images = dataService.GetImages();
+                return dataService.GetAllianceRaids()
                     .Select(x =>
                         x.ToDto(images.First(y =>
                             y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl));

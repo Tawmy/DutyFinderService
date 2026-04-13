@@ -12,12 +12,17 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 
     public async Task UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameSuffix)), ffxivPatch, ct);
+        await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
+    }
+
+    public async Task UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch, CT ct = default)
+    {
+        await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
     }
 
     public async Task UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(trials.Select(x => new Content(x.Name, x.NameSuffix)), ffxivPatch, ct);
+        await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
     }
 
     private async Task UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
@@ -34,14 +39,22 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
             uint? rowId = null;
             try
             {
-                rowId = await GetRowIdAsync(content.FullName, ct);
+                rowId = await GetRowIdAsync(content.Name, ct);
             }
             catch
             {
                 // do nothing
             }
 
-            rowId ??= await GetRowIdAsync(content.Name, ct);
+            if (!string.IsNullOrEmpty(content.NameFallback))
+            {
+                rowId ??= await GetRowIdAsync(content.NameFallback, ct);
+            }
+
+            if (rowId is null)
+            {
+                throw new XivApiException($"Failed to retrieve RowId for {content.Name}");
+            }
 
             if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
             {
@@ -101,12 +114,12 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 
     private async Task AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, string ffxivPatch, CT ct)
     {
-        var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Content.FullName).Contains(x.Name))
+        var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Content.Name).Contains(x.Name))
             .ToListAsync(ct);
 
         foreach (var contentData in contentDatas)
         {
-            if (dbEntries.FirstOrDefault(x => x.Name == contentData.Content.FullName) is { } dbEntry)
+            if (dbEntries.FirstOrDefault(x => x.Name == contentData.Content.Name) is { } dbEntry)
             {
                 if (!dbEntry.ImageUrl.Equals(contentData.ImageUrl) ||
                     !dbEntry.LastUpdatedPatch.Equals(ffxivPatch, StringComparison.OrdinalIgnoreCase))
@@ -121,7 +134,7 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                 // data not saved to database yet, create new entry
                 ctx.Images.Add(new Image
                 {
-                    Name = contentData.Content.FullName,
+                    Name = contentData.Content.Name,
                     ImageUrl = contentData.ImageUrl,
                     LastUpdatedPatch = ffxivPatch
                 });
@@ -131,10 +144,7 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         await ctx.SaveChangesAsync(ct);
     }
 
-    private record Content(string Name, string? NameSuffix)
-    {
-        public string FullName => !string.IsNullOrEmpty(NameSuffix) ? $"{Name} {NameSuffix}" : Name;
-    }
+    private record Content(string Name, string? NameFallback = null);
 
     private record ContentData(Content Content, string ImageUrl);
 
