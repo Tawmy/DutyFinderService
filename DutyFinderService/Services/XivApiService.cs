@@ -10,25 +10,25 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 {
     private const string Sheet = "ContentFinderCondition";
 
-    public async Task UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch, CT ct = default)
+    public async Task<int> UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
+        return await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
     }
 
-    public async Task UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch, CT ct = default)
+    public async Task<int> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        return await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
     }
 
-    public async Task UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
+    public async Task<int> UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
     {
-        await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        return await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
     }
 
-    private async Task UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
+    private async Task<int> UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
     {
         var contentDatas = await RetrieveContentDatasAsync(contents, ct);
-        await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
+        return await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
     }
 
     private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<Content> contents, CT ct)
@@ -112,10 +112,12 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         return $"https://v2.xivapi.com/api/asset?path={imagePath}&format=png";
     }
 
-    private async Task AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, string ffxivPatch, CT ct)
+    private async Task<int> AddContentDatasToDbAsync(IEnumerable<ContentData> contentDatas, string ffxivPatch, CT ct)
     {
         var dbEntries = await ctx.Images.Where(x => contentDatas.Select(y => y.Content.Name).Contains(x.Name))
             .ToListAsync(ct);
+
+        var count = 0;
 
         foreach (var contentData in contentDatas)
         {
@@ -127,6 +129,8 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                     // update url if xivapi returned different url
                     dbEntry.ImageUrl = contentData.ImageUrl;
                     dbEntry.LastUpdatedPatch = ffxivPatch;
+                    
+                    count++;
                 }
             }
             else
@@ -138,10 +142,14 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
                     ImageUrl = contentData.ImageUrl,
                     LastUpdatedPatch = ffxivPatch
                 });
+
+                count++;
             }
         }
 
         await ctx.SaveChangesAsync(ct);
+
+        return count;
     }
 
     private record Content(string Name, string? NameFallback = null);
