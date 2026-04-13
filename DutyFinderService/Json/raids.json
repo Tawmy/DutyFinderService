@@ -1272,5 +1272,65 @@
     "Level": 100,
     "Difficulty": "Savage",
     "AchievementId": 3868
+  },
+  {
+    "Name": "The Unending Coil of Bahamut (Ultimate)",
+    "Expansion": "Stormblood",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "4.11",
+    "Level": 70,
+    "Difficulty": "Ultimate",
+    "AchievementId": 1993
+  },
+  {
+    "Name": "The Weapon's Refrain (Ultimate)",
+    "Expansion": "Stormblood",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "4.31",
+    "Level": 70,
+    "Difficulty": "Ultimate",
+    "AchievementId": 2107
+  },
+  {
+    "Name": "The Epic of Alexander (Ultimate)",
+    "Expansion": "Shadowbringers",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "5.11",
+    "Level": 80,
+    "Difficulty": "Ultimate",
+    "AchievementId": 2444
+  },
+  {
+    "Name": "Dragonsong's Reprise (Ultimate)",
+    "Expansion": "Endwalker",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "6.11",
+    "Level": 90,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3074
+  },
+  {
+    "Name": "The Omega Protocol (Ultimate)",
+    "Expansion": "Endwalker",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "6.31",
+    "Level": 90,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3162
+  },
+  {
+    "Name": "Futures Rewritten (Ultimate)",
+    "Expansion": "Dawntrail",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "7.11",
+    "Level": 100,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3617
   }
 ]
