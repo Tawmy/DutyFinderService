@@ -7,6 +7,9 @@
     environment:
       LOGGING__LOGLEVEL__DEFAULT: Debug
       LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Debug
+      LOGGING__LOGLEVEL__MICROSOFT.ENTITYFRAMEWORKCORE: Debug
+      LOGGING__LOGLEVEL__POLLY: Debug
+      LOGGING__LOGLEVEL__SYSTEM.NET.HTTP.HTTPCLIENT: Debug
       AUTH_AUTHORITY: https://id.ffxiv.local/realms/eorzea-dev
     labels:
       - dev.orbstack.domains=duty-finder-service.local

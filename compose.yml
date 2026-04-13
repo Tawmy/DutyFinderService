@@ -8,6 +8,9 @@
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: true
       LOGGING__LOGLEVEL__DEFAULT: Information
       LOGGING__LOGLEVEL__MICROSOFT.ASPNETCORE: Warning
+      LOGGING__LOGLEVEL__MICROSOFT.ENTITYFRAMEWORKCORE: Warning
+      LOGGING__LOGLEVEL__POLLY: Warning
+      LOGGING__LOGLEVEL__SYSTEM.NET.HTTP.HTTPCLIENT: Warning
       CONNECTION_STRING: Host=db;Database=duty-finder-service;Username=duty-finder-service;Password=${DB_PASSWORD};GSS Encryption Mode=Disable
       AUTH_AUDIENCE: duty-finder-service
       AUTH_AUTHORITY: https://ffxiv.id/realms/eorzea
