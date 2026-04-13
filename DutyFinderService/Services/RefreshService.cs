@@ -42,6 +42,9 @@ internal class RefreshService(
             {
                 logger.LogInformation("Updated images for {n} alliance raids.", trials);
             }
+
+            await dataService.LoadImagesAsync(ct);
+            logger.LogInformation("Images for duties have been updated.");
         }
     }
 
