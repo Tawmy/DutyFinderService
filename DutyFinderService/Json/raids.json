@@ -1,0 +1,1336 @@
+[
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 747
+  },
+  {
+    "Name": "The Binding Coil of Bahamut - Turn 5",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Binding Coil of Bahamut",
+    "Patch": "2.0",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.2",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 887
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 1 (Savage)",
+    "NameFallback": "The Second Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 997
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 2 (Savage)",
+    "NameFallback": "The Second Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 998
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 3 (Savage)",
+    "NameFallback": "The Second Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 999
+  },
+  {
+    "Name": "The Second Coil of Bahamut - Turn 4 (Savage)",
+    "NameFallback": "The Second Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Second Coil of Bahamut",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Savage",
+    "AchievementId": 1000
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 1",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 2",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 3",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "The Final Coil of Bahamut - Turn 4",
+    "Expansion": "ARealmReborn",
+    "Series": "The Coils of Bahamut",
+    "Section": "The Final Coil of Bahamut",
+    "Patch": "2.4",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1040
+  },
+  {
+    "Name": "Alexander - The Fist of the Father",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.01",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Cuff of the Father",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.01",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Arm of the Father",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.01",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Burden of the Father",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.01",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1228
+  },
+  {
+    "Name": "Alexander - The Fist of the Father (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.05",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Cuff of the Father (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.05",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Arm of the Father (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.05",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Burden of the Father (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Gordias",
+    "Patch": "3.05",
+    "Level": 60,
+    "Difficulty": "Savage",
+    "AchievementId": 1231
+  },
+  {
+    "Name": "Alexander - The Fist of the Son",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Cuff of the Son",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Arm of the Son",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Burden of the Son",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1476
+  },
+  {
+    "Name": "Alexander - The Fist of the Son (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Cuff of the Son (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Arm of the Son (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Burden of the Son (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: Midas",
+    "Patch": "3.2",
+    "Level": 60,
+    "Difficulty": "Savage",
+    "AchievementId": 1479
+  },
+  {
+    "Name": "Alexander - The Eyes of the Creator",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Breath of the Creator",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Heart of the Creator",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alexander - The Soul of the Creator",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1639
+  },
+  {
+    "Name": "Alexander - The Eyes of the Creator (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Breath of the Creator (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Heart of the Creator (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alexander - The Soul of the Creator (Savage)",
+    "Expansion": "Heavensward",
+    "Series": "Alexander",
+    "Section": "Alexander: The Creator",
+    "Patch": "3.4",
+    "Level": 60,
+    "Difficulty": "Savage",
+    "AchievementId": 1642
+  },
+  {
+    "Name": "Deltascape V1.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.01",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Deltascape V2.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.01",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Deltascape V3.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.01",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Deltascape V4.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.01",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 1895
+  },
+  {
+    "Name": "Deltascape V1.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.05",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Deltascape V2.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.05",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Deltascape V3.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.05",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Deltascape V4.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Deltascape",
+    "Patch": "4.05",
+    "Level": 70,
+    "Difficulty": "Savage",
+    "AchievementId": 1898
+  },
+  {
+    "Name": "Sigmascape V1.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Sigmascape V2.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Sigmascape V3.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Sigmascape V4.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 2024
+  },
+  {
+    "Name": "Sigmascape V1.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Sigmascape V2.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Sigmascape V3.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Sigmascape V4.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Sigmascape",
+    "Patch": "4.2",
+    "Level": 70,
+    "Difficulty": "Savage",
+    "AchievementId": 2027
+  },
+  {
+    "Name": "Alphascape V1.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alphascape V2.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alphascape V3.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Alphascape V4.0",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 2118
+  },
+  {
+    "Name": "Alphascape V1.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alphascape V2.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alphascape V3.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Alphascape V4.0 (Savage)",
+    "Expansion": "Stormblood",
+    "Series": "Omega",
+    "Section": "Omega: Alphascape",
+    "Patch": "4.4",
+    "Level": 70,
+    "Difficulty": "Savage",
+    "AchievementId": 2121
+  },
+  {
+    "Name": "Eden's Gate: Resurrection",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.01",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Gate: Descent",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.01",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Gate: Inundation",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.01",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Gate: Sepulture",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.01",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2409
+  },
+  {
+    "Name": "Eden's Gate: Resurrection (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.05",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Gate: Descent (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.05",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Gate: Inundation (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.05",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Gate: Sepulture (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Gate",
+    "Patch": "5.05",
+    "Level": 80,
+    "Difficulty": "Savage",
+    "AchievementId": 2412
+  },
+  {
+    "Name": "Eden's Verse: Fulmination",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Verse: Furor",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Verse: Iconoclasm",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Verse: Refulgence",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2591
+  },
+  {
+    "Name": "Eden's Verse: Fulmination (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Verse: Furor (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Verse: Iconoclasm (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Verse: Refulgence (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Verse",
+    "Patch": "5.2",
+    "Level": 80,
+    "Difficulty": "Savage",
+    "AchievementId": 2594
+  },
+  {
+    "Name": "Eden's Promise: Umbra",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Promise: Litany",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Promise: Anamorphosis",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Eden's Promise: Eternity",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2719
+  },
+  {
+    "Name": "Eden's Promise: Umbra (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Promise: Litany (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Promise: Anamorphosis (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Eden's Promise: Eternity (Savage)",
+    "Expansion": "Shadowbringers",
+    "Series": "Eden",
+    "Section": "Eden's Promise",
+    "Patch": "5.4",
+    "Level": 80,
+    "Difficulty": "Savage",
+    "AchievementId": 2722
+  },
+  {
+    "Name": "Asphodelos: The First Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.01",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Asphodelos: The Second Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.01",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Asphodelos: The Third Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.01",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Asphodelos: The Fourth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.01",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3035
+  },
+  {
+    "Name": "Asphodelos: The First Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.05",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Asphodelos: The Second Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.05",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Asphodelos: The Third Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.05",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Asphodelos: The Fourth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Asphodelos",
+    "Patch": "6.05",
+    "Level": 90,
+    "Difficulty": "Savage",
+    "AchievementId": 3038
+  },
+  {
+    "Name": "Abyssos: The Fifth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Abyssos: The Sixth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Abyssos: The Seventh Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Abyssos: The Eighth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3108
+  },
+  {
+    "Name": "Abyssos: The Fifth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Abyssos: The Sixth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Abyssos: The Seventh Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Abyssos: The Eighth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Abyssos",
+    "Patch": "6.2",
+    "Level": 90,
+    "Difficulty": "Savage",
+    "AchievementId": 3111
+  },
+  {
+    "Name": "Anabaseios: The Ninth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Anabaseios: The Tenth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Anabaseios: The Eleventh Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "Anabaseios: The Twelfth Circle",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3248
+  },
+  {
+    "Name": "Anabaseios: The Ninth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Anabaseios: The Tenth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Anabaseios: The Eleventh Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "Anabaseios: The Twelfth Circle (Savage)",
+    "Expansion": "Endwalker",
+    "Series": "Pandæmonium",
+    "Section": "Pandæmonium: Anabaseios",
+    "Patch": "6.4",
+    "Level": 90,
+    "Difficulty": "Savage",
+    "AchievementId": 3251
+  },
+  {
+    "Name": "AAC Light-heavyweight M1",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier",
+    "Patch": "7.01",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Light-heavyweight M2",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier",
+    "Patch": "7.01",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Light-heavyweight M3",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier",
+    "Patch": "7.01",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Light-heavyweight M4",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier",
+    "Patch": "7.01",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3572
+  },
+  {
+    "Name": "AAC Light-heavyweight M1 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier (Savage)",
+    "Patch": "7.05",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Light-heavyweight M2 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier (Savage)",
+    "Patch": "7.05",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Light-heavyweight M3 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier (Savage)",
+    "Patch": "7.05",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Light-heavyweight M4 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Light-heavyweight Tier (Savage)",
+    "Patch": "7.05",
+    "Level": 100,
+    "Difficulty": "Savage",
+    "AchievementId": 3575
+  },
+  {
+    "Name": "AAC Cruiserweight M1",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Cruiserweight M2",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Cruiserweight M3",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Cruiserweight M4",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3627
+  },
+  {
+    "Name": "AAC Cruiserweight M1 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier (Savage)",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Cruiserweight M2 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier (Savage)",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Cruiserweight M3 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier (Savage)",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Cruiserweight M4 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Cruiserweight Tier (Savage)",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Savage",
+    "AchievementId": 3630
+  },
+  {
+    "Name": "AAC Heavyweight M1",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Heavyweight M2",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Heavyweight M3",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
+    "Name": "AAC Heavyweight M4",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3865
+  },
+  {
+    "Name": "AAC Heavyweight M1 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier (Savage)",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Heavyweight M2 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier (Savage)",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Heavyweight M3 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier (Savage)",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Savage"
+  },
+  {
+    "Name": "AAC Heavyweight M4 (Savage)",
+    "Expansion": "Dawntrail",
+    "Series": "The Arcadion",
+    "Section": "AAC Heavyweight Tier (Savage)",
+    "Patch": "7.4",
+    "Level": 100,
+    "Difficulty": "Savage",
+    "AchievementId": 3868
+  },
+  {
+    "Name": "The Unending Coil of Bahamut (Ultimate)",
+    "Expansion": "Stormblood",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "4.11",
+    "Level": 70,
+    "Difficulty": "Ultimate",
+    "AchievementId": 1993
+  },
+  {
+    "Name": "The Weapon's Refrain (Ultimate)",
+    "Expansion": "Stormblood",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "4.31",
+    "Level": 70,
+    "Difficulty": "Ultimate",
+    "AchievementId": 2107
+  },
+  {
+    "Name": "The Epic of Alexander (Ultimate)",
+    "Expansion": "Shadowbringers",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "5.11",
+    "Level": 80,
+    "Difficulty": "Ultimate",
+    "AchievementId": 2444
+  },
+  {
+    "Name": "Dragonsong's Reprise (Ultimate)",
+    "Expansion": "Endwalker",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "6.11",
+    "Level": 90,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3074
+  },
+  {
+    "Name": "The Omega Protocol (Ultimate)",
+    "Expansion": "Endwalker",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "6.31",
+    "Level": 90,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3162
+  },
+  {
+    "Name": "Futures Rewritten (Ultimate)",
+    "Expansion": "Dawntrail",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "7.11",
+    "Level": 100,
+    "Difficulty": "Ultimate",
+    "AchievementId": 3617
+  }
+]

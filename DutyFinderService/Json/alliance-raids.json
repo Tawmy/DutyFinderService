@@ -1,0 +1,164 @@
+[
+  {
+    "Name": "The Labyrinth of the Ancients",
+    "Expansion": "ARealmReborn",
+    "Series": "The Crystal Tower",
+    "Patch": "2.1",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 883
+  },
+  {
+    "Name": "Syrcus Tower",
+    "Expansion": "ARealmReborn",
+    "Series": "The Crystal Tower",
+    "Patch": "2.3",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 995
+  },
+  {
+    "Name": "The World of Darkness",
+    "Expansion": "ARealmReborn",
+    "Series": "The Crystal Tower",
+    "Patch": "2.5",
+    "Level": 50,
+    "Difficulty": "Normal",
+    "AchievementId": 1068
+  },
+  {
+    "Name": "The Void Ark",
+    "Expansion": "Heavensward",
+    "Series": "Shadow of Mhach",
+    "Patch": "3.1",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1399
+  },
+  {
+    "Name": "The Weeping City of Mhach",
+    "Expansion": "Heavensward",
+    "Series": "Shadow of Mhach",
+    "Patch": "3.3",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1574
+  },
+  {
+    "Name": "Dun Scaith",
+    "Expansion": "Heavensward",
+    "Series": "Shadow of Mhach",
+    "Patch": "3.5",
+    "Level": 60,
+    "Difficulty": "Normal",
+    "AchievementId": 1689
+  },
+  {
+    "Name": "The Royal City of Rabanastre",
+    "Expansion": "Stormblood",
+    "Series": "Return to Ivalice",
+    "Patch": "4.1",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 1992
+  },
+  {
+    "Name": "The Ridorana Lighthouse",
+    "Expansion": "Stormblood",
+    "Series": "Return to Ivalice",
+    "Patch": "4.3",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 2106
+  },
+  {
+    "Name": "The Orbonne Monastery",
+    "Expansion": "Stormblood",
+    "Series": "Return to Ivalice",
+    "Patch": "4.5",
+    "Level": 70,
+    "Difficulty": "Normal",
+    "AchievementId": 2164
+  },
+  {
+    "Name": "The Copied Factory",
+    "Expansion": "Shadowbringers",
+    "Series": "YoRHa: Dark Apocalypse",
+    "Patch": "5.1",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2443
+  },
+  {
+    "Name": "The Puppets' Bunker",
+    "Expansion": "Shadowbringers",
+    "Series": "YoRHa: Dark Apocalypse",
+    "Patch": "5.3",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2622
+  },
+  {
+    "Name": "The Tower at Paradigm's Breach",
+    "Expansion": "Shadowbringers",
+    "Series": "YoRHa: Dark Apocalypse",
+    "Patch": "5.5",
+    "Level": 80,
+    "Difficulty": "Normal",
+    "AchievementId": 2847
+  },
+  {
+    "Name": "Aglaia",
+    "Expansion": "Endwalker",
+    "Series": "Myths of the Realm",
+    "Patch": "6.1",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3073
+  },
+  {
+    "Name": "Euphrosyne",
+    "Expansion": "Endwalker",
+    "Series": "Myths of the Realm",
+    "Patch": "6.3",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3161
+  },
+  {
+    "Name": "Thaleia",
+    "Expansion": "Endwalker",
+    "Series": "Myths of the Realm",
+    "Patch": "6.5",
+    "Level": 90,
+    "Difficulty": "Normal",
+    "AchievementId": 3403
+  },
+  {
+    "Name": "Jeuno: The First Walk",
+    "Expansion": "Dawntrail",
+    "Series": "Echoes of Vana'diel",
+    "Patch": "7.1",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3606
+  },
+  {
+    "Name": "The Cloud of Darkness (Chaotic)",
+    "Expansion": "Dawntrail",
+    "Series": "Chaotic Alliance Raids",
+    "Patch": "7.2",
+    "Level": 100,
+    "Difficulty": "Chaotic",
+    "AchievementId": 3616
+  },
+  {
+    "Name": "San d'Oria: The Second Walk",
+    "Expansion": "Dawntrail",
+    "Series": "Echoes of Vana'diel",
+    "Patch": "7.3",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3806
+  }
+]
