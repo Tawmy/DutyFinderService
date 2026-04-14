@@ -17,6 +17,8 @@ builder.Services.AddSingleton<DataService>();
 builder.Services.AddScoped<XivApiService>();
 builder.Services.AddScoped<RefreshService>();
 
+builder.Services.AddHealthChecks().AddDbContextCheck<DatabaseContext>("db");
+
 builder.AddCustomOpenApi();
 builder.AddCustomAuthentication();
 builder.Services.AddAuthorization();

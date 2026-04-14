@@ -1,5 +1,7 @@
+using DutyFinderService.Db;
 using DutyFinderService.Extensions;
 using DutyFinderService.Services;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Caching.Hybrid;
 
 namespace DutyFinderService;
@@ -10,6 +12,13 @@ public static class Endpoints
     {
         public void MapEndpoints()
         {
+            app.MapHealthChecks("/health").RequireAuthorization();
+
+            app.MapHealthChecks("/health/db", new HealthCheckOptions
+            {
+                Predicate = check => check.Name.Equals(nameof(DatabaseContext), StringComparison.OrdinalIgnoreCase)
+            }).RequireAuthorization();
+
             app.MapGet("/refresh", async (DataService dataService, XivApiService xivApiService,
                 HybridCache hybridCache, CT ct) =>
             {
