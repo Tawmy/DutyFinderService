@@ -37,12 +37,14 @@ public static class AuthenticationExtensions
                 });
         }
 
-        public void AddCustomOpenApi()
+        public void AddCustomOpenApi(Version version)
         {
             builder.Services.AddOpenApi(options =>
             {
                 options.AddDocumentTransformer((document, _, _) =>
                 {
+                    document.Info.Version = version.ToString(3);
+
                     var authority =
                         builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAuthority);
                     var tokenUrl = Path.Combine(authority, "protocol/openid-connect/token");
