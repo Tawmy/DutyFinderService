@@ -1,6 +1,5 @@
 ﻿services:
   api:
-    image: ghcr.io/tawmy/dutyfinderservice:main
     depends_on:
       db:
         condition: service_healthy

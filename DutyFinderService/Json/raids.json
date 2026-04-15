@@ -1,6 +1,7 @@
 [
   {
     "Name": "The Binding Coil of Bahamut - Turn 1",
+    "Abbreviation": "T1",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Binding Coil of Bahamut",
@@ -10,6 +11,7 @@
   },
   {
     "Name": "The Binding Coil of Bahamut - Turn 2",
+    "Abbreviation": "T2",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Binding Coil of Bahamut",
@@ -19,6 +21,7 @@
   },
   {
     "Name": "The Binding Coil of Bahamut - Turn 3",
+    "Abbreviation": "T3",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Binding Coil of Bahamut",
@@ -28,6 +31,7 @@
   },
   {
     "Name": "The Binding Coil of Bahamut - Turn 4",
+    "Abbreviation": "T4",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Binding Coil of Bahamut",
@@ -38,6 +42,7 @@
   },
   {
     "Name": "The Binding Coil of Bahamut - Turn 5",
+    "Abbreviation": "T5",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Binding Coil of Bahamut",
@@ -47,6 +52,7 @@
   },
   {
     "Name": "The Second Coil of Bahamut - Turn 1",
+    "Abbreviation": "T6",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -56,6 +62,7 @@
   },
   {
     "Name": "The Second Coil of Bahamut - Turn 2",
+    "Abbreviation": "T7",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -65,6 +72,7 @@
   },
   {
     "Name": "The Second Coil of Bahamut - Turn 3",
+    "Abbreviation": "T8",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -74,6 +82,7 @@
   },
   {
     "Name": "The Second Coil of Bahamut - Turn 4",
+    "Abbreviation": "T9",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -85,6 +94,7 @@
   {
     "Name": "The Second Coil of Bahamut - Turn 1 (Savage)",
     "NameFallback": "The Second Coil of Bahamut - Turn 1",
+    "Abbreviation": "T6S",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -96,6 +106,7 @@
   {
     "Name": "The Second Coil of Bahamut - Turn 2 (Savage)",
     "NameFallback": "The Second Coil of Bahamut - Turn 2",
+    "Abbreviation": "T7S",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -107,6 +118,7 @@
   {
     "Name": "The Second Coil of Bahamut - Turn 3 (Savage)",
     "NameFallback": "The Second Coil of Bahamut - Turn 3",
+    "Abbreviation": "T8S",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -118,6 +130,7 @@
   {
     "Name": "The Second Coil of Bahamut - Turn 4 (Savage)",
     "NameFallback": "The Second Coil of Bahamut - Turn 4",
+    "Abbreviation": "T9S",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Second Coil of Bahamut",
@@ -128,6 +141,7 @@
   },
   {
     "Name": "The Final Coil of Bahamut - Turn 1",
+    "Abbreviation": "T10",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Final Coil of Bahamut",
@@ -137,6 +151,7 @@
   },
   {
     "Name": "The Final Coil of Bahamut - Turn 2",
+    "Abbreviation": "T11",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Final Coil of Bahamut",
@@ -146,6 +161,7 @@
   },
   {
     "Name": "The Final Coil of Bahamut - Turn 3",
+    "Abbreviation": "T12",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Final Coil of Bahamut",
@@ -155,6 +171,7 @@
   },
   {
     "Name": "The Final Coil of Bahamut - Turn 4",
+    "Abbreviation": "T13",
     "Expansion": "ARealmReborn",
     "Series": "The Coils of Bahamut",
     "Section": "The Final Coil of Bahamut",
@@ -165,6 +182,7 @@
   },
   {
     "Name": "Alexander - The Fist of the Father",
+    "Abbreviation": "A1",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -174,6 +192,7 @@
   },
   {
     "Name": "Alexander - The Cuff of the Father",
+    "Abbreviation": "A2",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -183,6 +202,7 @@
   },
   {
     "Name": "Alexander - The Arm of the Father",
+    "Abbreviation": "A3",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -192,6 +212,7 @@
   },
   {
     "Name": "Alexander - The Burden of the Father",
+    "Abbreviation": "A4",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -202,6 +223,7 @@
   },
   {
     "Name": "Alexander - The Fist of the Father (Savage)",
+    "Abbreviation": "A1S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -211,6 +233,7 @@
   },
   {
     "Name": "Alexander - The Cuff of the Father (Savage)",
+    "Abbreviation": "A2S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -220,6 +243,7 @@
   },
   {
     "Name": "Alexander - The Arm of the Father (Savage)",
+    "Abbreviation": "A3S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -229,6 +253,7 @@
   },
   {
     "Name": "Alexander - The Burden of the Father (Savage)",
+    "Abbreviation": "A4S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Gordias",
@@ -239,6 +264,7 @@
   },
   {
     "Name": "Alexander - The Fist of the Son",
+    "Abbreviation": "A5",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -248,6 +274,7 @@
   },
   {
     "Name": "Alexander - The Cuff of the Son",
+    "Abbreviation": "A6",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -257,6 +284,7 @@
   },
   {
     "Name": "Alexander - The Arm of the Son",
+    "Abbreviation": "A7",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -266,6 +294,7 @@
   },
   {
     "Name": "Alexander - The Burden of the Son",
+    "Abbreviation": "A8",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -276,6 +305,7 @@
   },
   {
     "Name": "Alexander - The Fist of the Son (Savage)",
+    "Abbreviation": "A5S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -285,6 +315,7 @@
   },
   {
     "Name": "Alexander - The Cuff of the Son (Savage)",
+    "Abbreviation": "A6S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -294,6 +325,7 @@
   },
   {
     "Name": "Alexander - The Arm of the Son (Savage)",
+    "Abbreviation": "A7S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -303,6 +335,7 @@
   },
   {
     "Name": "Alexander - The Burden of the Son (Savage)",
+    "Abbreviation": "A8S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: Midas",
@@ -313,6 +346,7 @@
   },
   {
     "Name": "Alexander - The Eyes of the Creator",
+    "Abbreviation": "A9",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -322,6 +356,7 @@
   },
   {
     "Name": "Alexander - The Breath of the Creator",
+    "Abbreviation": "A10",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -331,6 +366,7 @@
   },
   {
     "Name": "Alexander - The Heart of the Creator",
+    "Abbreviation": "A11",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -340,6 +376,7 @@
   },
   {
     "Name": "Alexander - The Soul of the Creator",
+    "Abbreviation": "A12",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -350,6 +387,7 @@
   },
   {
     "Name": "Alexander - The Eyes of the Creator (Savage)",
+    "Abbreviation": "A9S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -359,6 +397,7 @@
   },
   {
     "Name": "Alexander - The Breath of the Creator (Savage)",
+    "Abbreviation": "A10S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -368,6 +407,7 @@
   },
   {
     "Name": "Alexander - The Heart of the Creator (Savage)",
+    "Abbreviation": "A11S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -377,6 +417,7 @@
   },
   {
     "Name": "Alexander - The Soul of the Creator (Savage)",
+    "Abbreviation": "A12S",
     "Expansion": "Heavensward",
     "Series": "Alexander",
     "Section": "Alexander: The Creator",
@@ -387,6 +428,7 @@
   },
   {
     "Name": "Deltascape V1.0",
+    "Abbreviation": "O1",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -396,6 +438,7 @@
   },
   {
     "Name": "Deltascape V2.0",
+    "Abbreviation": "O2",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -405,6 +448,7 @@
   },
   {
     "Name": "Deltascape V3.0",
+    "Abbreviation": "O3",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -414,6 +458,7 @@
   },
   {
     "Name": "Deltascape V4.0",
+    "Abbreviation": "O4",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -424,6 +469,7 @@
   },
   {
     "Name": "Deltascape V1.0 (Savage)",
+    "Abbreviation": "O1S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -433,6 +479,7 @@
   },
   {
     "Name": "Deltascape V2.0 (Savage)",
+    "Abbreviation": "O2S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -442,6 +489,7 @@
   },
   {
     "Name": "Deltascape V3.0 (Savage)",
+    "Abbreviation": "O3S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -451,6 +499,7 @@
   },
   {
     "Name": "Deltascape V4.0 (Savage)",
+    "Abbreviation": "O4S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Deltascape",
@@ -461,6 +510,7 @@
   },
   {
     "Name": "Sigmascape V1.0",
+    "Abbreviation": "O5",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -470,6 +520,7 @@
   },
   {
     "Name": "Sigmascape V2.0",
+    "Abbreviation": "O6",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -479,6 +530,7 @@
   },
   {
     "Name": "Sigmascape V3.0",
+    "Abbreviation": "O7",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -488,6 +540,7 @@
   },
   {
     "Name": "Sigmascape V4.0",
+    "Abbreviation": "O8",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -498,6 +551,7 @@
   },
   {
     "Name": "Sigmascape V1.0 (Savage)",
+    "Abbreviation": "O5S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -507,6 +561,7 @@
   },
   {
     "Name": "Sigmascape V2.0 (Savage)",
+    "Abbreviation": "O6S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -516,6 +571,7 @@
   },
   {
     "Name": "Sigmascape V3.0 (Savage)",
+    "Abbreviation": "O7S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -525,6 +581,7 @@
   },
   {
     "Name": "Sigmascape V4.0 (Savage)",
+    "Abbreviation": "O8S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Sigmascape",
@@ -535,6 +592,7 @@
   },
   {
     "Name": "Alphascape V1.0",
+    "Abbreviation": "O9",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -544,6 +602,7 @@
   },
   {
     "Name": "Alphascape V2.0",
+    "Abbreviation": "O10",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -553,6 +612,7 @@
   },
   {
     "Name": "Alphascape V3.0",
+    "Abbreviation": "O11",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -562,6 +622,7 @@
   },
   {
     "Name": "Alphascape V4.0",
+    "Abbreviation": "O12",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -572,6 +633,7 @@
   },
   {
     "Name": "Alphascape V1.0 (Savage)",
+    "Abbreviation": "O9S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -581,6 +643,7 @@
   },
   {
     "Name": "Alphascape V2.0 (Savage)",
+    "Abbreviation": "O10S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -590,6 +653,7 @@
   },
   {
     "Name": "Alphascape V3.0 (Savage)",
+    "Abbreviation": "O11S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -599,6 +663,7 @@
   },
   {
     "Name": "Alphascape V4.0 (Savage)",
+    "Abbreviation": "O12S",
     "Expansion": "Stormblood",
     "Series": "Omega",
     "Section": "Omega: Alphascape",
@@ -609,6 +674,7 @@
   },
   {
     "Name": "Eden's Gate: Resurrection",
+    "Abbreviation": "E1",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -618,6 +684,7 @@
   },
   {
     "Name": "Eden's Gate: Descent",
+    "Abbreviation": "E2",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -627,6 +694,7 @@
   },
   {
     "Name": "Eden's Gate: Inundation",
+    "Abbreviation": "E3",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -636,6 +704,7 @@
   },
   {
     "Name": "Eden's Gate: Sepulture",
+    "Abbreviation": "E4",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -646,6 +715,7 @@
   },
   {
     "Name": "Eden's Gate: Resurrection (Savage)",
+    "Abbreviation": "E1S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -655,6 +725,7 @@
   },
   {
     "Name": "Eden's Gate: Descent (Savage)",
+    "Abbreviation": "E2S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -664,6 +735,7 @@
   },
   {
     "Name": "Eden's Gate: Inundation (Savage)",
+    "Abbreviation": "E3S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -673,6 +745,7 @@
   },
   {
     "Name": "Eden's Gate: Sepulture (Savage)",
+    "Abbreviation": "E4S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Gate",
@@ -683,6 +756,7 @@
   },
   {
     "Name": "Eden's Verse: Fulmination",
+    "Abbreviation": "E5",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -692,6 +766,7 @@
   },
   {
     "Name": "Eden's Verse: Furor",
+    "Abbreviation": "E6",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -701,6 +776,7 @@
   },
   {
     "Name": "Eden's Verse: Iconoclasm",
+    "Abbreviation": "E7",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -710,6 +786,7 @@
   },
   {
     "Name": "Eden's Verse: Refulgence",
+    "Abbreviation": "E8",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -720,6 +797,7 @@
   },
   {
     "Name": "Eden's Verse: Fulmination (Savage)",
+    "Abbreviation": "E5S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -729,6 +807,7 @@
   },
   {
     "Name": "Eden's Verse: Furor (Savage)",
+    "Abbreviation": "E6S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -738,6 +817,7 @@
   },
   {
     "Name": "Eden's Verse: Iconoclasm (Savage)",
+    "Abbreviation": "E7S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -747,6 +827,7 @@
   },
   {
     "Name": "Eden's Verse: Refulgence (Savage)",
+    "Abbreviation": "E8S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Verse",
@@ -757,6 +838,7 @@
   },
   {
     "Name": "Eden's Promise: Umbra",
+    "Abbreviation": "E9",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -766,6 +848,7 @@
   },
   {
     "Name": "Eden's Promise: Litany",
+    "Abbreviation": "E10",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -775,6 +858,7 @@
   },
   {
     "Name": "Eden's Promise: Anamorphosis",
+    "Abbreviation": "E11",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -784,6 +868,7 @@
   },
   {
     "Name": "Eden's Promise: Eternity",
+    "Abbreviation": "E12",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -794,6 +879,7 @@
   },
   {
     "Name": "Eden's Promise: Umbra (Savage)",
+    "Abbreviation": "E9S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -803,6 +889,7 @@
   },
   {
     "Name": "Eden's Promise: Litany (Savage)",
+    "Abbreviation": "E10S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -812,6 +899,7 @@
   },
   {
     "Name": "Eden's Promise: Anamorphosis (Savage)",
+    "Abbreviation": "E11S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -821,6 +909,7 @@
   },
   {
     "Name": "Eden's Promise: Eternity (Savage)",
+    "Abbreviation": "E12S",
     "Expansion": "Shadowbringers",
     "Series": "Eden",
     "Section": "Eden's Promise",
@@ -831,6 +920,7 @@
   },
   {
     "Name": "Asphodelos: The First Circle",
+    "Abbreviation": "P1",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -840,6 +930,7 @@
   },
   {
     "Name": "Asphodelos: The Second Circle",
+    "Abbreviation": "P2",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -849,6 +940,7 @@
   },
   {
     "Name": "Asphodelos: The Third Circle",
+    "Abbreviation": "P3",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -858,6 +950,7 @@
   },
   {
     "Name": "Asphodelos: The Fourth Circle",
+    "Abbreviation": "P4",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -868,6 +961,7 @@
   },
   {
     "Name": "Asphodelos: The First Circle (Savage)",
+    "Abbreviation": "P1S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -877,6 +971,7 @@
   },
   {
     "Name": "Asphodelos: The Second Circle (Savage)",
+    "Abbreviation": "P2S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -886,6 +981,7 @@
   },
   {
     "Name": "Asphodelos: The Third Circle (Savage)",
+    "Abbreviation": "P3S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -895,6 +991,7 @@
   },
   {
     "Name": "Asphodelos: The Fourth Circle (Savage)",
+    "Abbreviation": "P4S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Asphodelos",
@@ -905,6 +1002,7 @@
   },
   {
     "Name": "Abyssos: The Fifth Circle",
+    "Abbreviation": "P5",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -914,6 +1012,7 @@
   },
   {
     "Name": "Abyssos: The Sixth Circle",
+    "Abbreviation": "P6",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -923,6 +1022,7 @@
   },
   {
     "Name": "Abyssos: The Seventh Circle",
+    "Abbreviation": "P7",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -932,6 +1032,7 @@
   },
   {
     "Name": "Abyssos: The Eighth Circle",
+    "Abbreviation": "P8",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -942,6 +1043,7 @@
   },
   {
     "Name": "Abyssos: The Fifth Circle (Savage)",
+    "Abbreviation": "P5S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -951,6 +1053,7 @@
   },
   {
     "Name": "Abyssos: The Sixth Circle (Savage)",
+    "Abbreviation": "P6S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -960,6 +1063,7 @@
   },
   {
     "Name": "Abyssos: The Seventh Circle (Savage)",
+    "Abbreviation": "P7S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -969,6 +1073,7 @@
   },
   {
     "Name": "Abyssos: The Eighth Circle (Savage)",
+    "Abbreviation": "P8S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Abyssos",
@@ -979,6 +1084,7 @@
   },
   {
     "Name": "Anabaseios: The Ninth Circle",
+    "Abbreviation": "P9",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -988,6 +1094,7 @@
   },
   {
     "Name": "Anabaseios: The Tenth Circle",
+    "Abbreviation": "P10",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -997,6 +1104,7 @@
   },
   {
     "Name": "Anabaseios: The Eleventh Circle",
+    "Abbreviation": "P11",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1006,6 +1114,7 @@
   },
   {
     "Name": "Anabaseios: The Twelfth Circle",
+    "Abbreviation": "P12",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1016,6 +1125,7 @@
   },
   {
     "Name": "Anabaseios: The Ninth Circle (Savage)",
+    "Abbreviation": "P9S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1025,6 +1135,7 @@
   },
   {
     "Name": "Anabaseios: The Tenth Circle (Savage)",
+    "Abbreviation": "P10S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1034,6 +1145,7 @@
   },
   {
     "Name": "Anabaseios: The Eleventh Circle (Savage)",
+    "Abbreviation": "P11S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1043,6 +1155,7 @@
   },
   {
     "Name": "Anabaseios: The Twelfth Circle (Savage)",
+    "Abbreviation": "P12S",
     "Expansion": "Endwalker",
     "Series": "Pandæmonium",
     "Section": "Pandæmonium: Anabaseios",
@@ -1053,6 +1166,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M1",
+    "Abbreviation": "M1",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier",
@@ -1062,6 +1176,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M2",
+    "Abbreviation": "M2",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier",
@@ -1071,6 +1186,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M3",
+    "Abbreviation": "M3",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier",
@@ -1080,6 +1196,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M4",
+    "Abbreviation": "M4",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier",
@@ -1090,6 +1207,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M1 (Savage)",
+    "Abbreviation": "M1S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier (Savage)",
@@ -1099,6 +1217,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M2 (Savage)",
+    "Abbreviation": "M2S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier (Savage)",
@@ -1108,6 +1227,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M3 (Savage)",
+    "Abbreviation": "M3S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier (Savage)",
@@ -1117,6 +1237,7 @@
   },
   {
     "Name": "AAC Light-heavyweight M4 (Savage)",
+    "Abbreviation": "M4S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Light-heavyweight Tier (Savage)",
@@ -1127,6 +1248,7 @@
   },
   {
     "Name": "AAC Cruiserweight M1",
+    "Abbreviation": "M5",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier",
@@ -1136,6 +1258,7 @@
   },
   {
     "Name": "AAC Cruiserweight M2",
+    "Abbreviation": "M6",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier",
@@ -1145,6 +1268,7 @@
   },
   {
     "Name": "AAC Cruiserweight M3",
+    "Abbreviation": "M7",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier",
@@ -1154,6 +1278,7 @@
   },
   {
     "Name": "AAC Cruiserweight M4",
+    "Abbreviation": "M8",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier",
@@ -1164,6 +1289,7 @@
   },
   {
     "Name": "AAC Cruiserweight M1 (Savage)",
+    "Abbreviation": "M5S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier (Savage)",
@@ -1173,6 +1299,7 @@
   },
   {
     "Name": "AAC Cruiserweight M2 (Savage)",
+    "Abbreviation": "M6S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier (Savage)",
@@ -1182,6 +1309,7 @@
   },
   {
     "Name": "AAC Cruiserweight M3 (Savage)",
+    "Abbreviation": "M7S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier (Savage)",
@@ -1191,6 +1319,7 @@
   },
   {
     "Name": "AAC Cruiserweight M4 (Savage)",
+    "Abbreviation": "M8S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Cruiserweight Tier (Savage)",
@@ -1201,6 +1330,7 @@
   },
   {
     "Name": "AAC Heavyweight M1",
+    "Abbreviation": "M9",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier",
@@ -1210,6 +1340,7 @@
   },
   {
     "Name": "AAC Heavyweight M2",
+    "Abbreviation": "M10",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier",
@@ -1219,6 +1350,7 @@
   },
   {
     "Name": "AAC Heavyweight M3",
+    "Abbreviation": "M11",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier",
@@ -1228,6 +1360,7 @@
   },
   {
     "Name": "AAC Heavyweight M4",
+    "Abbreviation": "M12",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier",
@@ -1238,6 +1371,7 @@
   },
   {
     "Name": "AAC Heavyweight M1 (Savage)",
+    "Abbreviation": "M9S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier (Savage)",
@@ -1247,6 +1381,7 @@
   },
   {
     "Name": "AAC Heavyweight M2 (Savage)",
+    "Abbreviation": "M10S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier (Savage)",
@@ -1256,6 +1391,7 @@
   },
   {
     "Name": "AAC Heavyweight M3 (Savage)",
+    "Abbreviation": "M11S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier (Savage)",
@@ -1265,6 +1401,7 @@
   },
   {
     "Name": "AAC Heavyweight M4 (Savage)",
+    "Abbreviation": "M12S",
     "Expansion": "Dawntrail",
     "Series": "The Arcadion",
     "Section": "AAC Heavyweight Tier (Savage)",
@@ -1275,6 +1412,7 @@
   },
   {
     "Name": "The Unending Coil of Bahamut (Ultimate)",
+    "Abbreviation": "UCoB",
     "Expansion": "Stormblood",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",
@@ -1285,6 +1423,7 @@
   },
   {
     "Name": "The Weapon's Refrain (Ultimate)",
+    "Abbreviation": "UWU",
     "Expansion": "Stormblood",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",
@@ -1295,6 +1434,7 @@
   },
   {
     "Name": "The Epic of Alexander (Ultimate)",
+    "Abbreviation": "TEA",
     "Expansion": "Shadowbringers",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",
@@ -1305,6 +1445,7 @@
   },
   {
     "Name": "Dragonsong's Reprise (Ultimate)",
+    "Abbreviation": "DSR",
     "Expansion": "Endwalker",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",
@@ -1315,6 +1456,7 @@
   },
   {
     "Name": "The Omega Protocol (Ultimate)",
+    "Abbreviation": "TOP",
     "Expansion": "Endwalker",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",
@@ -1325,6 +1467,7 @@
   },
   {
     "Name": "Futures Rewritten (Ultimate)",
+    "Abbreviation": "FRU",
     "Expansion": "Dawntrail",
     "Series": "Ultimate Raids",
     "Section": "Ultimate Raids",

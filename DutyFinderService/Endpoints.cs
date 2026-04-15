@@ -1,3 +1,5 @@
+using AspNetCoreExtensions;
+using DutyFinderService.Data;
 using DutyFinderService.Db;
 using DutyFinderService.Extensions;
 using DutyFinderService.Services;
@@ -23,21 +25,25 @@ public static class Endpoints
                 HybridCache hybridCache, CT ct) =>
             {
                 var currentFfxivPatch = dataService.GetCurrentFfxivPatch();
-                await xivApiService.UpdateImagesAsync(dataService.GetRaids(), currentFfxivPatch, ct);
-                await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), currentFfxivPatch, ct);
-                await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
+                var raids = await xivApiService.UpdateImagesAsync(dataService.GetRaids(), currentFfxivPatch, ct);
+                var allianceRaids = await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(),
+                    currentFfxivPatch, ct);
+                var trials = await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
                 await dataService.LoadImagesAsync(ct);
 
                 await hybridCache.RemoveAsync("raids", ct);
                 await hybridCache.RemoveAsync("alliance-raids", ct);
                 await hybridCache.RemoveAsync("trials", ct);
 
-                return Results.NoContent();
+                return Results.Ok(raids.NameFallbackUsed
+                    .Concat(allianceRaids.NameFallbackUsed)
+                    .Concat(trials.NameFallbackUsed));
             }).RequireAuthorization();
 
-            app.MapGet("/raids", async (DataService dataService, HybridCache hybridCache, CT ct) =>
+            app.MapGet("/raids", async (DataService dataService, HybridCache hybridCache,
+                Expansion? expansion, RaidDifficulty? difficulty, CT ct) =>
             {
-                return await hybridCache.GetOrCreateAsync("raids", _ =>
+                var raids = await hybridCache.GetOrCreateAsync("raids", _ =>
                 {
                     var images = dataService.GetImages();
                     return ValueTask.FromResult(dataService.GetRaids()
@@ -46,11 +52,16 @@ public static class Endpoints
                                 y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl))
                         .ToList());
                 }, cancellationToken: ct);
+
+                return raids
+                    .Where(x => expansion is null || x.Expansion == expansion.Value.GetDisplayName())
+                    .Where(x => difficulty is null || x.Difficulty == difficulty.Value);
             });
 
-            app.MapGet("/alliance-raids", async (DataService dataService, HybridCache hybridCache, CT ct) =>
+            app.MapGet("/alliance-raids", async (DataService dataService, HybridCache hybridCache,
+                Expansion? expansion, AllianceRaidDifficulty? difficulty, CT ct) =>
             {
-                return await hybridCache.GetOrCreateAsync("alliance-raids", async _ =>
+                var allianceRaids = await hybridCache.GetOrCreateAsync("alliance-raids", async _ =>
                 {
                     var images = dataService.GetImages();
                     return dataService.GetAllianceRaids()
@@ -59,11 +70,16 @@ public static class Endpoints
                                 y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl))
                         .ToList();
                 }, cancellationToken: ct);
+
+                return allianceRaids
+                    .Where(x => expansion is null || x.Expansion == expansion.Value.GetDisplayName())
+                    .Where(x => difficulty is null || x.Difficulty == difficulty.Value);
             });
 
-            app.MapGet("/trials", async (DataService dataService, HybridCache hybridCache, CT ct) =>
+            app.MapGet("/trials", async (DataService dataService, HybridCache hybridCache,
+                Expansion? expansion, TrialDifficulty? difficulty, CT ct) =>
             {
-                return await hybridCache.GetOrCreateAsync("trials", async _ =>
+                var trials = await hybridCache.GetOrCreateAsync("trials", async _ =>
                 {
                     var images = dataService.GetImages();
                     return dataService.GetTrials()
@@ -72,6 +88,10 @@ public static class Endpoints
                                 y.Name.Equals(x.Name, StringComparison.Ordinal)).ImageUrl))
                         .ToList();
                 }, cancellationToken: ct);
+
+                return trials
+                    .Where(x => expansion is null || x.Expansion == expansion.Value.GetDisplayName())
+                    .Where(x => difficulty is null || x.Difficulty == difficulty.Value);
             });
         }
     }

@@ -6,66 +6,83 @@ using XivApiClient.Abstractions;
 
 namespace DutyFinderService.Services;
 
-internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
+internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx, ILogger<XivApiService> logger)
 {
     private const string Sheet = "ContentFinderCondition";
 
-    public async Task<int> UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch, CT ct = default)
-    {
-        return await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
-    }
-
-    public async Task<int> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch,
+    public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch,
         CT ct = default)
     {
-        return await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        var result = await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
+        result.Log(logger, "raids");
+        return result;
     }
 
-    public async Task<int> UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch, CT ct = default)
+    public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch,
+        CT ct = default)
     {
-        return await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        var result = await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        result.Log(logger, "alliance raids");
+        return result;
     }
 
-    private async Task<int> UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
+    public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch,
+        CT ct = default)
+    {
+        var result = await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        result.Log(logger, "trials");
+        return result;
+    }
+
+    private async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
     {
         var contentDatas = await RetrieveContentDatasAsync(contents, ct);
-        return await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
+
+        var nameFallbackUsed = contentDatas
+            .Where(x => x.NameFallbackUsed)
+            .Select(x => x.Content.Name)
+            .ToList();
+
+        var count = await AddContentDatasToDbAsync(contentDatas, ffxivPatch, ct);
+        return new ContentUpdateResult(count, nameFallbackUsed);
     }
 
     private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<Content> contents, CT ct)
     {
-        List<ContentData> contentDatas = [];
-        foreach (var content in contents)
+        return await Task.WhenAll(contents.Select(x => RetrieveContentDataAsync(x, ct)));
+    }
+
+    private async Task<ContentData> RetrieveContentDataAsync(Content content, CT ct)
+    {
+        uint? rowId = null;
+        var usedNameFallback = false;
+
+        try
         {
-            uint? rowId = null;
-            try
-            {
-                rowId = await GetRowIdAsync(content.Name, ct);
-            }
-            catch
-            {
-                // do nothing
-            }
-
-            if (!string.IsNullOrEmpty(content.NameFallback))
-            {
-                rowId ??= await GetRowIdAsync(content.NameFallback, ct);
-            }
-
-            if (rowId is null)
-            {
-                throw new XivApiException($"Failed to retrieve RowId for {content.Name}");
-            }
-
-            if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
-            {
-                throw new XivApiException($"Failed to retrieve image url for rowId {rowId}");
-            }
-
-            contentDatas.Add(new ContentData(content, imageUrl));
+            rowId = await GetRowIdAsync(content.Name, ct);
+        }
+        catch
+        {
+            // do nothing
         }
 
-        return contentDatas;
+        if (rowId is null && !string.IsNullOrEmpty(content.NameFallback))
+        {
+            rowId = await GetRowIdAsync(content.NameFallback, ct);
+            usedNameFallback = true;
+        }
+
+        if (rowId is null)
+        {
+            throw new XivApiException($"Failed to retrieve RowId for {content.Name}");
+        }
+
+        if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
+        {
+            throw new XivApiException($"Failed to retrieve image url for rowId {rowId}");
+        }
+
+        return new ContentData(content, imageUrl, usedNameFallback);
     }
 
     private async Task<uint> GetRowIdAsync(string name, CT ct)
@@ -149,13 +166,28 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
         }
 
         await ctx.SaveChangesAsync(ct);
-
         return count;
     }
 
     private record Content(string Name, string? NameFallback = null);
 
-    private record ContentData(Content Content, string ImageUrl);
+    private record ContentData(Content Content, string ImageUrl, bool NameFallbackUsed = false);
 
-    public class XivApiException(string message) : Exception(message);
+    internal record ContentUpdateResult(int Count, IReadOnlyList<string> NameFallbackUsed)
+    {
+        public void Log(ILogger logger, string label)
+        {
+            if (!logger.IsEnabled(LogLevel.Information)) return;
+
+            logger.LogInformation("Updated images for {n} {label}.", Count, label);
+
+            if (NameFallbackUsed.Count > 0)
+            {
+                logger.LogInformation("NameFallback used for {label}: {Names}", label,
+                    string.Join(", ", NameFallbackUsed));
+            }
+        }
+    }
+
+    private class XivApiException(string message) : Exception(message);
 }

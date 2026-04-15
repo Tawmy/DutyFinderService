@@ -22,28 +22,11 @@ internal class RefreshService(
         {
             logger.LogInformation("Not all images have been updated this patch, updating...");
 
-            var raids = await xivApiService.UpdateImagesAsync(dataService.GetRaids(), ffxivPatch, ct);
-
-            if (logger.IsEnabled(LogLevel.Information))
-            {
-                logger.LogInformation("Updated images for {n} raids.", raids);
-            }
-
-            var allianceRaids = await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), ffxivPatch, ct);
-
-            if (logger.IsEnabled(LogLevel.Information))
-            {
-                logger.LogInformation("Updated images for {n} alliance raids.", allianceRaids);
-            }
-
-            var trials = await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ffxivPatch, ct);
-
-            if (logger.IsEnabled(LogLevel.Information))
-            {
-                logger.LogInformation("Updated images for {n} alliance raids.", trials);
-            }
-
+            await xivApiService.UpdateImagesAsync(dataService.GetRaids(), ffxivPatch, ct);
+            await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), ffxivPatch, ct);
+            await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ffxivPatch, ct);
             await dataService.LoadImagesAsync(ct);
+
             logger.LogInformation("Images for duties have been updated.");
         }
     }

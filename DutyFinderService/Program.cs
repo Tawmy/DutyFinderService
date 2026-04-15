@@ -19,7 +19,8 @@ builder.Services.AddScoped<RefreshService>();
 
 builder.Services.AddHealthChecks().AddDbContextCheck<DatabaseContext>("db");
 
-builder.AddCustomOpenApi();
+var version = typeof(Program).Assembly.GetName().Version!;
+builder.AddCustomOpenApi(version);
 builder.AddCustomAuthentication();
 builder.Services.AddAuthorization();
 
@@ -38,5 +39,10 @@ await app.Services.MigrateDatabaseAsync<DatabaseContext>();
 await app.Services.GetRequiredService<DataService>().InitializeAsync();
 var scope = app.Services.CreateScope();
 await scope.ServiceProvider.GetRequiredService<RefreshService>().UpdateImagesIfNecessaryAsync();
+
+if (app.Logger.IsEnabled(LogLevel.Information))
+{
+    app.Logger.LogInformation("Duty Finder Service, Version {v}", version.ToString(3));
+}
 
 app.Run();
