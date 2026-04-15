@@ -6,26 +6,32 @@ using XivApiClient.Abstractions;
 
 namespace DutyFinderService.Services;
 
-internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
+internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx, ILogger<XivApiService> logger)
 {
     private const string Sheet = "ContentFinderCondition";
 
     public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Raid> raids, string ffxivPatch,
         CT ct = default)
     {
-        return await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
+        var result = await UpdateImagesAsync(raids.Select(x => new Content(x.Name, x.NameFallback)), ffxivPatch, ct);
+        result.Log(logger, "raids");
+        return result;
     }
 
     public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<AllianceRaid> allianceRaids, string ffxivPatch,
         CT ct = default)
     {
-        return await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        var result = await UpdateImagesAsync(allianceRaids.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        result.Log(logger, "alliance raids");
+        return result;
     }
 
     public async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Trial> trials, string ffxivPatch,
         CT ct = default)
     {
-        return await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        var result = await UpdateImagesAsync(trials.Select(x => new Content(x.Name)), ffxivPatch, ct);
+        result.Log(logger, "trials");
+        return result;
     }
 
     private async Task<ContentUpdateResult> UpdateImagesAsync(IEnumerable<Content> contents, string ffxivPatch, CT ct)
@@ -167,7 +173,21 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 
     private record ContentData(Content Content, string ImageUrl, bool NameFallbackUsed = false);
 
-    internal record ContentUpdateResult(int Count, IReadOnlyList<string> NameFallbackUsed);
+    internal record ContentUpdateResult(int Count, IReadOnlyList<string> NameFallbackUsed)
+    {
+        public void Log(ILogger logger, string label)
+        {
+            if (!logger.IsEnabled(LogLevel.Information)) return;
+
+            logger.LogInformation("Updated images for {n} {label}.", Count, label);
+
+            if (NameFallbackUsed.Count > 0)
+            {
+                logger.LogInformation("NameFallback used for {label}: {Names}", label,
+                    string.Join(", ", NameFallbackUsed));
+            }
+        }
+    }
 
     private class XivApiException(string message) : Exception(message);
 }
