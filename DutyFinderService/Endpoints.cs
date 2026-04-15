@@ -23,16 +23,19 @@ public static class Endpoints
                 HybridCache hybridCache, CT ct) =>
             {
                 var currentFfxivPatch = dataService.GetCurrentFfxivPatch();
-                await xivApiService.UpdateImagesAsync(dataService.GetRaids(), currentFfxivPatch, ct);
-                await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), currentFfxivPatch, ct);
-                await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
+                var raids = await xivApiService.UpdateImagesAsync(dataService.GetRaids(), currentFfxivPatch, ct);
+                var allianceRaids = await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(),
+                    currentFfxivPatch, ct);
+                var trials = await xivApiService.UpdateImagesAsync(dataService.GetTrials(), currentFfxivPatch, ct);
                 await dataService.LoadImagesAsync(ct);
 
                 await hybridCache.RemoveAsync("raids", ct);
                 await hybridCache.RemoveAsync("alliance-raids", ct);
                 await hybridCache.RemoveAsync("trials", ct);
 
-                return Results.NoContent();
+                return Results.Ok(raids.NameFallbackUsed
+                    .Concat(allianceRaids.NameFallbackUsed)
+                    .Concat(trials.NameFallbackUsed));
             }).RequireAuthorization();
 
             app.MapGet("/raids", async (DataService dataService, HybridCache hybridCache, CT ct) =>

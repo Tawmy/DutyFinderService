@@ -26,21 +26,39 @@ internal class RefreshService(
 
             if (logger.IsEnabled(LogLevel.Information))
             {
-                logger.LogInformation("Updated images for {n} raids.", raids);
+                logger.LogInformation("Updated images for {n} raids.", raids.Count);
+
+                if (raids.NameFallbackUsed.Count > 0)
+                {
+                    logger.LogInformation("NameFallback used for raids: {Names}",
+                        string.Join(", ", raids.NameFallbackUsed));
+                }
             }
 
             var allianceRaids = await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), ffxivPatch, ct);
 
             if (logger.IsEnabled(LogLevel.Information))
             {
-                logger.LogInformation("Updated images for {n} alliance raids.", allianceRaids);
+                logger.LogInformation("Updated images for {n} alliance raids.", allianceRaids.Count);
+
+                if (allianceRaids.NameFallbackUsed.Count > 0)
+                {
+                    logger.LogInformation("NameFallback used for alliance raids: {Names}",
+                        string.Join(", ", allianceRaids.NameFallbackUsed));
+                }
             }
 
             var trials = await xivApiService.UpdateImagesAsync(dataService.GetTrials(), ffxivPatch, ct);
 
             if (logger.IsEnabled(LogLevel.Information))
             {
-                logger.LogInformation("Updated images for {n} alliance raids.", trials);
+                logger.LogInformation("Updated images for {n} trials.", trials.Count);
+
+                if (trials.NameFallbackUsed.Count > 0)
+                {
+                    logger.LogInformation("NameFallback used for trials: {Names}",
+                        string.Join(", ", trials.NameFallbackUsed));
+                }
             }
 
             await dataService.LoadImagesAsync(ct);
