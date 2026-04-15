@@ -34,38 +34,37 @@ internal class XivApiService(IXivApiClient xivApi, DatabaseContext ctx)
 
     private async Task<IEnumerable<ContentData>> RetrieveContentDatasAsync(IEnumerable<Content> contents, CT ct)
     {
-        List<ContentData> contentDatas = [];
-        foreach (var content in contents)
+        return await Task.WhenAll(contents.Select(x => RetrieveContentDataAsync(x, ct)));
+    }
+
+    private async Task<ContentData> RetrieveContentDataAsync(Content content, CT ct)
+    {
+        uint? rowId = null;
+        try
         {
-            uint? rowId = null;
-            try
-            {
-                rowId = await GetRowIdAsync(content.Name, ct);
-            }
-            catch
-            {
-                // do nothing
-            }
-
-            if (!string.IsNullOrEmpty(content.NameFallback))
-            {
-                rowId ??= await GetRowIdAsync(content.NameFallback, ct);
-            }
-
-            if (rowId is null)
-            {
-                throw new XivApiException($"Failed to retrieve RowId for {content.Name}");
-            }
-
-            if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
-            {
-                throw new XivApiException($"Failed to retrieve image url for rowId {rowId}");
-            }
-
-            contentDatas.Add(new ContentData(content, imageUrl));
+            rowId = await GetRowIdAsync(content.Name, ct);
+        }
+        catch
+        {
+            // do nothing
         }
 
-        return contentDatas;
+        if (!string.IsNullOrEmpty(content.NameFallback))
+        {
+            rowId ??= await GetRowIdAsync(content.NameFallback, ct);
+        }
+
+        if (rowId is null)
+        {
+            throw new XivApiException($"Failed to retrieve RowId for {content.Name}");
+        }
+
+        if (await GetImageUrlAsync(rowId.Value, ct) is not { } imageUrl)
+        {
+            throw new XivApiException($"Failed to retrieve image url for rowId {rowId}");
+        }
+
+        return new ContentData(content, imageUrl);
     }
 
     private async Task<uint> GetRowIdAsync(string name, CT ct)
