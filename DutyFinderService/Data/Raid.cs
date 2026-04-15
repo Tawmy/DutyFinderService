@@ -4,6 +4,7 @@ public record Raid
 {
     public required string Name { get; init; }
     public string? NameFallback { get; init; }
+    public required string Abbreviation { get; init; }
     public required Expansion Expansion { get; init; }
     public required string Series { get; init; }
     public required string Section { get; init; }

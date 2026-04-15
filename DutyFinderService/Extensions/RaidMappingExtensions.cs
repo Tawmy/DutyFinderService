@@ -13,6 +13,7 @@ public static class RaidMappingExtensions
             return new RaidDto
             {
                 Name = source.Name,
+                Abbreviation = source.Abbreviation,
                 Expansion = source.Expansion.GetDisplayName(),
                 Series = source.Series,
                 Section = source.Section,

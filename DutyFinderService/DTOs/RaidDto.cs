@@ -5,6 +5,7 @@ namespace DutyFinderService.DTOs;
 public record RaidDto
 {
     public required string Name { get; init; }
+    public required string Abbreviation { get; init; }
     public required string Expansion { get; init; }
     public required string Series { get; init; }
     public required string Section { get; init; }
