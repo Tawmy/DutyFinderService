@@ -14,7 +14,7 @@
       CONNECTION_STRING: Host=db;Database=duty-finder-service;Username=duty-finder-service;Password=${DB_PASSWORD};GSS Encryption Mode=Disable
       AUTH_AUDIENCE: duty-finder-service
       AUTH_AUTHORITY: https://ffxiv.id/realms/eorzea
-      FFXIV_PATCH: 7.45
+      FFXIV_PATCH: 7.5
 
   db:
     image: postgres:18

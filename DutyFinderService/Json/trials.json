@@ -700,6 +700,13 @@
     "Difficulty": "Normal"
   },
   {
+    "Name": "The Unmaking",
+    "Expansion": "Dawntrail",
+    "Patch": "7.5",
+    "Level": 100,
+    "Difficulty": "Normal"
+  },
+  {
     "Name": "Worqor Lar Dor (Extreme)",
     "Expansion": "Dawntrail",
     "Patch": "7.0",
@@ -754,5 +761,13 @@
     "Level": 100,
     "Difficulty": "Extreme",
     "AchievementId": 3889
+  },
+  {
+    "Name": "The Unmaking (Extreme)",
+    "Expansion": "Dawntrail",
+    "Patch": "7.5",
+    "Level": 100,
+    "Difficulty": "Extreme",
+    "AchievementId": 3979
   }
 ]
