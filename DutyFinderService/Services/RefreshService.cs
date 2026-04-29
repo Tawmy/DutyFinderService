@@ -20,7 +20,7 @@ internal class RefreshService(
         }
         else
         {
-            logger.LogInformation("Not all images have been updated this patch, updating...");
+            logger.LogInformation("Not all images have been updated for patch {patch}, updating...", ffxivPatch);
 
             await xivApiService.UpdateImagesAsync(dataService.GetRaids(), ffxivPatch, ct);
             await xivApiService.UpdateImagesAsync(dataService.GetAllianceRaids(), ffxivPatch, ct);
