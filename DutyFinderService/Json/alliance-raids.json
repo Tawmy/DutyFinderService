@@ -160,5 +160,14 @@
     "Level": 100,
     "Difficulty": "Normal",
     "AchievementId": 3806
+  },
+  {
+    "Name": "Windurst: The Third Walk",
+    "Expansion": "Dawntrail",
+    "Series": "Echoes of Vana'diel",
+    "Patch": "7.5",
+    "Level": 100,
+    "Difficulty": "Normal",
+    "AchievementId": 3980
   }
 ]
