@@ -6,7 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <NoDefaultLaunchSettingsFile>True</NoDefaultLaunchSettingsFile>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-        <AssemblyVersion>1.2.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1</AssemblyVersion>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
