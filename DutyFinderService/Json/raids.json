@@ -1475,5 +1475,16 @@
     "Level": 100,
     "Difficulty": "Ultimate",
     "AchievementId": 3617
+  },
+  {
+    "Name": "Dancing Mad (Ultimate)",
+    "Abbreviation": "DMU",
+    "Expansion": "Dawntrail",
+    "Series": "Ultimate Raids",
+    "Section": "Ultimate Raids",
+    "Patch": "7.51",
+    "Level": 100,
+    "Difficulty": "Ultimate",
+    "AchievementId": 4069
   }
 ]
