@@ -2,15 +2,17 @@
   <configuration default="false" name="Compose Local" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
     <deployment type="docker-compose.yml">
       <settings>
+        <option name="envFilePath" value="$PROJECT_DIR$/.env" />
+        <option name="envFilePaths">
+          <list>
+            <option value="$PROJECT_DIR$/.env" />
+          </list>
+        </option>
         <option name="envVars">
           <list>
             <DockerEnvVarImpl>
               <option name="name" value="ASPNETCORE_ENVIRONMENT" />
               <option name="value" value="Development" />
-            </DockerEnvVarImpl>
-            <DockerEnvVarImpl>
-              <option name="name" value="DB_PASSWORD" />
-              <option name="value" value="jkl23hrkjhfgjkwehfkjlhekjfh2k3jgbjkhgbkjh" />
             </DockerEnvVarImpl>
           </list>
         </option>
