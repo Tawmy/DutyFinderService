@@ -13,7 +13,7 @@ internal class DataService(IConfiguration configuration, IDbContextFactory<Datab
 {
     private const string Directory = "Json";
     private static readonly JsonSerializerOptions Options = new() { Converters = { new JsonStringEnumConverter() } };
-    private readonly string _ffxivPatch = configuration.GetGuardedConfiguration(EnvironmentVariables.FfxivPatch);
+    private readonly string _ffxivPatch = configuration.GetRequiredConfiguration(EnvironmentVariables.FfxivPatch);
     private ImmutableArray<AllianceRaid>? _allianceRaids;
     private ImmutableArray<Image>? _images;
     private ImmutableArray<Raid>? _raids;
@@ -56,7 +56,7 @@ internal class DataService(IConfiguration configuration, IDbContextFactory<Datab
     {
         var ctx = await dbContextFactory.CreateDbContextAsync(ct);
         var images = await ctx.Images.ToListAsync(ct);
-        _images = [..images];
+        _images = [.. images];
     }
 
     private async Task LoadRaidsAsync(CT ct)
@@ -64,7 +64,7 @@ internal class DataService(IConfiguration configuration, IDbContextFactory<Datab
         await using var stream = File.OpenRead($"{Directory}/raids.json");
         var raids = await JsonSerializer.DeserializeAsync<Raid[]>(stream, Options, ct);
 
-        _raids = [..raids ?? throw new JsonException("Failed to parse raids.")];
+        _raids = [.. raids ?? throw new JsonException("Failed to parse raids.")];
     }
 
     private async Task LoadAllianceRaidsAsync(CT ct)
@@ -72,7 +72,7 @@ internal class DataService(IConfiguration configuration, IDbContextFactory<Datab
         await using var stream = File.OpenRead($"{Directory}/alliance-raids.json");
         var allianceRaids = await JsonSerializer.DeserializeAsync<AllianceRaid[]>(stream, Options, ct);
 
-        _allianceRaids = [..allianceRaids ?? throw new JsonException("Failed to parse alliance raids.")];
+        _allianceRaids = [.. allianceRaids ?? throw new JsonException("Failed to parse alliance raids.")];
     }
 
     private async Task LoadTrialsAsync(CT ct)
@@ -80,6 +80,6 @@ internal class DataService(IConfiguration configuration, IDbContextFactory<Datab
         await using var stream = File.OpenRead($"{Directory}/trials.json");
         var trials = await JsonSerializer.DeserializeAsync<Trial[]>(stream, Options, ct);
 
-        _trials = [..trials ?? throw new JsonException("Failed to parse trials.")];
+        _trials = [.. trials ?? throw new JsonException("Failed to parse trials.")];
     }
 }

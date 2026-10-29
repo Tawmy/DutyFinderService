@@ -23,7 +23,7 @@ public static class ServiceCollectionExtensions
                 })
             };
 
-            services.AddRefitClient<IXivApiClient>(settings)
+            services.AddRefitGeneratedClient<IXivApiClient>(settings)
                 .ConfigureHttpClient(c => c.BaseAddress = new Uri(baseUrl))
                 .AddStandardResilienceHandler();
         }

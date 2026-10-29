@@ -22,9 +22,9 @@ public static class AuthenticationExtensions
                 .AddJwtBearer(options =>
                 {
                     options.Authority =
-                        builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAuthority);
+                        builder.Configuration.GetRequiredConfiguration(EnvironmentVariables.AuthAuthority);
                     options.Audience =
-                        builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAudience);
+                        builder.Configuration.GetRequiredConfiguration(EnvironmentVariables.AuthAudience);
 
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
@@ -46,12 +46,12 @@ public static class AuthenticationExtensions
                     document.Info.Version = version.ToString(3);
 
                     var authority =
-                        builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAuthority);
+                        builder.Configuration.GetRequiredConfiguration(EnvironmentVariables.AuthAuthority);
                     var tokenUrl = Path.Combine(authority, "protocol/openid-connect/token");
 
                     string[] scopes =
                     [
-                        builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAudience)
+                        builder.Configuration.GetRequiredConfiguration(EnvironmentVariables.AuthAudience)
                     ];
                     var scopesDict = scopes.ToDictionary(x => x, _ => "Enable me!");
 
@@ -80,7 +80,7 @@ public static class AuthenticationExtensions
                         return Task.CompletedTask;
                     }
 
-                    var audience = builder.Configuration.GetGuardedConfiguration(EnvironmentVariables.AuthAudience);
+                    var audience = builder.Configuration.GetRequiredConfiguration(EnvironmentVariables.AuthAudience);
 
                     operation.Security ??= [];
                     operation.Security.Add(new OpenApiSecurityRequirement
